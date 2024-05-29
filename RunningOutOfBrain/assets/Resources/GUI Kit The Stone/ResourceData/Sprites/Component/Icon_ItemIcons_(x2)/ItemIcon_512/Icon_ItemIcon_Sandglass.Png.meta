@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "692f16ca-6a02-4ba2-94ea-549ada21146c",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 512,
+  "height": 512,
+  "platformSettings": {},
+  "subMetas": {
+    "Icon_ItemIcon_Sandglass": {
+      "ver": "1.0.6",
+      "uuid": "f5f2f2e8-2240-4a3e-8fee-9b15ba79e50f",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "692f16ca-6a02-4ba2-94ea-549ada21146c",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 3.5,
+      "offsetY": 2.5,
+      "trimX": 91,
+      "trimY": 69,
+      "width": 337,
+      "height": 369,
+      "rawWidth": 512,
+      "rawHeight": 512,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}
