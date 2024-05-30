@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "b408d940-8d68-4f98-a8e7-6fb61ffe09a8",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 1024,
+  "height": 1024,
+  "platformSettings": {},
+  "subMetas": {
+    "TX Village Props": {
+      "ver": "1.0.6",
+      "uuid": "da93ec4a-7cd4-4b86-b3ed-60f8d9c4ae76",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "b408d940-8d68-4f98-a8e7-6fb61ffe09a8",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 9.5,
+      "offsetY": 16,
+      "trimX": 28,
+      "trimY": 6,
+      "width": 987,
+      "height": 980,
+      "rawWidth": 1024,
+      "rawHeight": 1024,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}
