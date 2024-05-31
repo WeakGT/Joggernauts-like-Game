@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "510842b1-b2cb-4042-bd28-8edb074d831c",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 123,
+  "height": 149,
+  "platformSettings": {},
+  "subMetas": {
+    "Icon_ItemIcon_Talaria": {
+      "ver": "1.0.6",
+      "uuid": "90f922f8-9478-468e-ab43-55045de79f2c",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "510842b1-b2cb-4042-bd28-8edb074d831c",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 123,
+      "height": 149,
+      "rawWidth": 123,
+      "rawHeight": 149,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

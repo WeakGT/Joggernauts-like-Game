@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "110de0d1-c7fa-447d-958d-4cc00b768cca",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 128,
+  "height": 128,
+  "platformSettings": {},
+  "subMetas": {
+    "UI_Icon_AlarmClock": {
+      "ver": "1.0.6",
+      "uuid": "5fd7deeb-7d30-4932-acd1-b8c14b5ab17e",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "110de0d1-c7fa-447d-958d-4cc00b768cca",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -0.5,
+      "offsetY": 0,
+      "trimX": 19,
+      "trimY": 16,
+      "width": 89,
+      "height": 96,
+      "rawWidth": 128,
+      "rawHeight": 128,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}
