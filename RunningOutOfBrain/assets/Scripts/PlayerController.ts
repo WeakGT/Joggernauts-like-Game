@@ -43,16 +43,13 @@ export class PlayerController extends cc.Component {
     }
 
     update (dt){
-        this.node.x += this.playerSpeed * this.moveDir * dt;
-        this.node.scaleX = (this.moveDir >= 0) ? 1 : -1;
+        this.node.x += this.playerSpeed * 1 * dt;
         if(this.getComponent(cc.RigidBody).linearVelocity.y != 0)
             this.fallDown = true;
         else
             this.fallDown = false;
 
         this.playerAnimation();
-        if(this.invincible === false)
-            this.node.opacity = 255; // Ensure Mario is fully visible after invincibility
 
         if(this.node.y < -330 && this.dying == false)
             this.die();
@@ -60,47 +57,10 @@ export class PlayerController extends cc.Component {
 
     onKeyDown(event)
     {
-        if(this.dying === false) {
-            switch(event.keyCode)
-            {
-                case cc.macro.KEY.left:
-                    this.leftDown = true;
-                    this.playerMove(-1);
-                    break;
-                case cc.macro.KEY.right:
-                    this.rightDown = true;
-                    this.playerMove(1);
-                    break;
-                case cc.macro.KEY.a:
-                    this.reborn(cc.v3(-445, 200, 0));  // Reborn position can be adjusted
-                    break;
-                case cc.macro.KEY.up:
-                    this.playerJump(600);
-                    break;
-                case cc.macro.KEY.space:
-                    this.playerJump(600);
-                    break;
-            }
-        }
-    }
-
-    onKeyUp(event)
-    {
         switch(event.keyCode)
         {
-            case cc.macro.KEY.left:
-                this.leftDown = false;
-                if(this.rightDown)
-                    this.playerMove(1);
-                else
-                    this.playerMove(0);
-                break;
-            case cc.macro.KEY.right:
-                this.rightDown = false;
-                if(this.leftDown)
-                    this.playerMove(-1);
-                else
-                    this.playerMove(0);
+            case cc.macro.KEY.up:
+                this.playerJump(600);
                 break;
         }
     }
@@ -108,12 +68,7 @@ export class PlayerController extends cc.Component {
     onBeginContact(contact, selfCollider, otherCollider) {
     }
 
-    public die()
-    {
-    }
-
-    public playerMove(moveDir: number){
-        this.moveDir = moveDir;
+    public die() {
     }
 
     public playerAnimation(){
@@ -121,26 +76,11 @@ export class PlayerController extends cc.Component {
             this.anim.play("big_die");
         }
         else if(this.fallDown == true){
-            // ========== TODO ==========
-            // 1. Play fall_front animation (Checked the animation is playing or not and moveDir=0)
-            // 2. Play fall_side animation (Checked the animation is playing or not and moveDir != 0)
-            if(this.moveDir == 0 && !this.anim.getAnimationState("big_fall_front").isPlaying)
-                this.anim.play("big_fall_front");
-            else if(this.moveDir != 0 && !this.anim.getAnimationState("big_fall_side").isPlaying)
-                this.anim.play("big_fall_side");
+            if(!this.anim.getAnimationState("jump").isPlaying)
+                this.anim.play("jump")
         }
         else{
-            if(this.moveDir == 0)
-            {
-                this.getComponent(cc.Sprite).spriteFrame = this.default_sprite;
-                // ========== TODO ==========
-                // 1. Stop the animation which is playing
-                this.anim.stop();
-            }
-
-            // ========== TODO ==========
-            // 1. Play walk animation (Checked the walk animation is playing or not)
-            else if(!this.anim.getAnimationState("big_walk").isPlaying)
+            if(!this.anim.getAnimationState("big_walk").isPlaying)
                 this.anim.play("big_walk");
         }
     }

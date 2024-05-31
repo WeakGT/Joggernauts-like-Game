@@ -16,6 +16,7 @@ export default class Collider extends cc.Component {
 
     createColliders(objects) {
         objects.forEach(obj => {
+            cc.log(obj);
             let colliderNode = new cc.Node();
             this.node.addChild(colliderNode);
             colliderNode.name = 'Ground';
@@ -29,12 +30,21 @@ export default class Collider extends cc.Component {
 
             // 根據對象形狀創建對應的碰撞體
             let collider: cc.Collider = null;
-            // 如果是矩形
-            let boxCollider = colliderNode.addComponent(cc.PhysicsBoxCollider);
-            boxCollider.offset = cc.v2(obj.width / 2, -obj.height / 2);
-            boxCollider.size = cc.size(obj.width, obj.height);
-            collider = boxCollider;
-
+            if(obj.width && obj.height) {
+                // 如果是矩形
+                let boxCollider = colliderNode.addComponent(cc.PhysicsBoxCollider);
+                boxCollider.offset = cc.v2(obj.width / 2, -obj.height / 2);
+                boxCollider.size = cc.size(obj.width, obj.height);
+                collider = boxCollider;
+            }
+            else if(obj.points) {
+                // 如果是多邊形
+                let polygonCollider = colliderNode.addComponent(cc.PhysicsPolygonCollider);
+                let points = obj.points.map(point => cc.v2(point.x, point.y));
+                cc.log(points);
+                polygonCollider.points = points;
+                collider = polygonCollider;
+            }
             // 啟用碰撞體
             collider.apply();
         });

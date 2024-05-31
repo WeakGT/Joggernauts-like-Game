@@ -20,7 +20,7 @@ export default class PlayerCamera extends cc.Component {
     leftBoundary: number = 0;
 
     @property
-    rightBoundary: number = 2880; 
+    rightBoundary: number = 5760; 
     
     update () {
         if (this.target) {
