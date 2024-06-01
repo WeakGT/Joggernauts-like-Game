@@ -16,7 +16,6 @@ export default class Collider extends cc.Component {
 
     createColliders(objects) {
         objects.forEach(obj => {
-            cc.log(obj);
             let colliderNode = new cc.Node();
             this.node.addChild(colliderNode);
             colliderNode.name = 'Ground';
@@ -41,22 +40,12 @@ export default class Collider extends cc.Component {
                 // 如果是多邊形
                 let polygonCollider = colliderNode.addComponent(cc.PhysicsPolygonCollider);
                 let points = obj.points.map(point => cc.v2(point.x, point.y));
-                cc.log(points);
                 polygonCollider.points = points;
                 collider = polygonCollider;
             }
             // 啟用碰撞體
             collider.apply();
         });
-    }
-
-
-    
-    onCollisionEnter(event) {
-        let other = event.otherCollider;
-        let self = event.selfCollider;
-        // 處理碰撞事件
-        console.log('Collision detected between', self.node.name, 'and', other.node.name);
     }
 }
 

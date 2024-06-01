@@ -12,34 +12,33 @@ export class PlayerController extends cc.Component {
     @property()
     playerSpeed: number = 150;
 
-    @property(cc.SpriteFrame)
-    default_sprite: cc.SpriteFrame = null;
+    @property(cc.AnimationClip)
+    dieAnimation: cc.AnimationClip = null;
 
-    private moveDir = 0;
-    private leftDown: boolean = false;
-    private rightDown: boolean = false;
+    @property(cc.AnimationClip)
+    jumpAnimation: cc.AnimationClip = null;
+
+    @property(cc.AnimationClip)
+    walkAnimation: cc.AnimationClip = null;
+
     private physicManager: cc.PhysicsManager = null;
     private fallDown: boolean = false;
     private anim: cc.Animation = null;
     private dying: boolean = false;
-    private timer = 100;
-    private sprite: cc.Sprite = null;
-    private small: boolean = true;
     private invincible: boolean = false;
 
     onLoad(){
         this.physicManager = cc.director.getPhysicsManager();
         this.physicManager.enabled = true;
         this.physicManager.gravity = cc.v2 (0, -400);
-
-        cc.systemEvent.on(cc.SystemEvent.EventType.KEY_DOWN, this.onKeyDown, this);
-        cc.systemEvent.on(cc.SystemEvent.EventType.KEY_UP, this.onKeyUp, this);
-
-        this.sprite = this.getComponent(cc.Sprite);
     }
 
     start (){
         this.anim = this.getComponent(cc.Animation);
+        
+        this.anim.addClip(this.dieAnimation);
+        this.anim.addClip(this.jumpAnimation);
+        this.anim.addClip(this.walkAnimation);
     }
 
     update (dt){
@@ -55,33 +54,25 @@ export class PlayerController extends cc.Component {
             this.die();
     }
 
-    onKeyDown(event)
-    {
-        switch(event.keyCode)
-        {
-            case cc.macro.KEY.up:
-                this.playerJump(600);
-                break;
-        }
-    }
-
     onBeginContact(contact, selfCollider, otherCollider) {
     }
 
     public die() {
     }
-
+    
     public playerAnimation(){
-        if(this.getComponent(cc.PhysicsCollider).enabled === false) {
-            this.anim.play("big_die");
+        if (this.dying === true) {
+            this.anim.play(this.dieAnimation.name);
         }
-        else if(this.fallDown == true){
-            if(!this.anim.getAnimationState("jump").isPlaying)
-                this.anim.play("jump")
+        else if (this.fallDown === true) {
+            if (!this.anim.getAnimationState(this.jumpAnimation.name).isPlaying) {
+                this.anim.stop();
+            }
         }
-        else{
-            if(!this.anim.getAnimationState("big_walk").isPlaying)
-                this.anim.play("big_walk");
+        else {
+            if (!this.anim.getAnimationState(this.walkAnimation.name).isPlaying) {
+                this.anim.play(this.walkAnimation.name);
+            }
         }
     }
 
@@ -89,7 +80,7 @@ export class PlayerController extends cc.Component {
     {
         if(!this.fallDown) {
             this.node.getComponent(cc.RigidBody).linearVelocity = cc.v2(0, velocity);
-            this.playEffect(this.Jump);
+            this.anim.play(this.jumpAnimation.name);
         }
     }
 
@@ -97,9 +88,5 @@ export class PlayerController extends cc.Component {
     {
         this.node.position = rebornPos;
         this.getComponent(cc.RigidBody).linearVelocity = cc.v2();
-    }
-
-    playEffect(clip: cc.AudioClip) {
-        this.audioID = cc.audioEngine.playEffect(clip, false);
     }
 }

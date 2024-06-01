@@ -1,11 +1,6 @@
-// Learn TypeScript:
-//  - https://docs.cocos.com/creator/manual/en/scripting/typescript.html
-// Learn Attribute:
-//  - https://docs.cocos.com/creator/manual/en/scripting/reference/attributes.html
-// Learn life-cycle callbacks:
-//  - https://docs.cocos.com/creator/manual/en/scripting/life-cycle-callbacks.html
-
 const {ccclass, property} = cc._decorator;
+
+import MultiPlayerController from './MultiPlayerController';
 
 @ccclass
 export default class PlayerCamera extends cc.Component {
@@ -14,17 +9,24 @@ export default class PlayerCamera extends cc.Component {
     yAxisValid = false;
     
     @property(cc.Node)
-    target: cc.Node = null;
+    multiPlayerControllerNode: cc.Node = null;
 
     @property
     leftBoundary: number = 0;
 
     @property
     rightBoundary: number = 5760; 
+
+    private multiPlayerController: MultiPlayerController = null;
     
-    update () {
-        if (this.target) {
-            let tar_pos = this.target.getPosition();
+    onLoad() {
+        this.multiPlayerController = this.multiPlayerControllerNode.getComponent(MultiPlayerController);
+    }
+    
+    update() {
+        let target = this.multiPlayerController.getLeadingPlayer();
+        if (target) {
+            let tar_pos = target.getPosition();
             tar_pos.x = tar_pos.x > this.leftBoundary ? tar_pos.x : this.leftBoundary;
             tar_pos.x = tar_pos.x < this.rightBoundary - 960 ? tar_pos.x : this.rightBoundary - 960;
 
