@@ -3126,7 +3126,9 @@
       "__id__": 6
     },
     "_enabled": true,
-    "bgmClip": null,
+    "bgmClip": {
+      "__uuid__": "affb2b93-3f3f-4464-8259-48993f014a7a"
+    },
     "_id": "d3VNeTk29BrqQAC+cuhhqm"
   },
   {
