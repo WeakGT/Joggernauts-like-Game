@@ -914,8 +914,8 @@
         "__id__": 15
       }
     ],
-    "bgm": {
-      "__uuid__": "64503af7-0fd7-4fc0-8633-c010b0bff726"
+    "bgmClip": {
+      "__uuid__": "affb2b93-3f3f-4464-8259-48993f014a7a"
     },
     "_id": "ebxMV40P5GG62a3ZrSOBSl"
   }

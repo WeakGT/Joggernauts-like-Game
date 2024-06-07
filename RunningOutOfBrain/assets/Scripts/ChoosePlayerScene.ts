@@ -1,5 +1,6 @@
 const { ccclass, property } = cc._decorator;
 
+import { AudioManager } from "./AudioManager";
 import { DataManager } from "./DataManager";
 
 @ccclass("PlayerJoin")
@@ -13,6 +14,10 @@ class PlayerJoin {
 
 @ccclass
 export default class ChoosePlayerScene extends cc.Component {
+
+    @property(cc.AudioClip)
+    bgmClip: cc.AudioClip = null;
+
     @property([PlayerJoin])
     availablePlayers: PlayerJoin[] = [];
 
@@ -74,6 +79,9 @@ export default class ChoosePlayerScene extends cc.Component {
 
         this.initNextButton();
         this.initBackButton();
+
+        // music
+        AudioManager.getInstance().playBGM(this.bgmClip);
     }
   
     update() {

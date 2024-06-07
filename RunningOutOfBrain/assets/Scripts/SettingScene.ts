@@ -1,8 +1,12 @@
 const { ccclass, property } = cc._decorator;
+import { AudioManager } from "./AudioManager";
 import { DataManager } from "./DataManager";
 
 @ccclass
 export default class SettingScene extends cc.Component {
+
+    @property(cc.AudioClip)
+    bgmClip: cc.AudioClip = null;
 
     loadBackScene() {
         cc.director.loadScene("StartScene");
@@ -23,6 +27,9 @@ export default class SettingScene extends cc.Component {
         cc.find("Canvas/EffectSlider").getComponent(cc.Slider).progress = DataManager.getInstance().effectVolume;
         cc.find("Canvas/PlaySpeedSlider").getComponent(cc.Slider).progress = Math.trunc(DataManager.getInstance().gameSpeed / 2);
         cc.find("Canvas/LivesSlider").getComponent(cc.Slider).progress = Math.trunc(DataManager.getInstance().playerLives / 10);
+
+        // music
+        AudioManager.getInstance().playBGM(this.bgmClip);
     }
     
     update(dt) {

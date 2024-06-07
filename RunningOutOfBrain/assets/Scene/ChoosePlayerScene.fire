@@ -4238,6 +4238,9 @@
       "__id__": 2
     },
     "_enabled": true,
+    "bgmClip": {
+      "__uuid__": "affb2b93-3f3f-4464-8259-48993f014a7a"
+    },
     "availablePlayers": [
       {
         "__id__": 86

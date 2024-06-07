@@ -1,3 +1,5 @@
+import { AudioManager } from "./AudioManager";
+
 const { ccclass, property } = cc._decorator;
 
 @ccclass
@@ -7,7 +9,7 @@ export default class StartScene extends cc.Component {
     Labels: cc.Label[] = [];
 
     @property(cc.AudioClip)
-    bgm: cc.AudioClip = null;
+    bgmClip: cc.AudioClip = null;
 
     private Index: number = 0;
 
@@ -26,7 +28,7 @@ export default class StartScene extends cc.Component {
         // system
         cc.systemEvent.on(cc.SystemEvent.EventType.KEY_DOWN, this.onKeyDown, this);
         // music
-        cc.audioEngine.playMusic(this.bgm, true);
+        AudioManager.getInstance().playBGM(this.bgmClip);
     }
 
     update(dt) {
