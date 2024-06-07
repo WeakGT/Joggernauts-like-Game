@@ -15,6 +15,8 @@ export class DataManager {
     public playerLives: number = 5;
     public gameSpeed: number = 1;
     public userCount: number = 1;
+    public currentPlayerLives: number = 5;
+    public currentStars: number = 0;
     public selectedPlayers: string[] = ["black", "white"];
     public gameSummary: {} = {
         // "black": {

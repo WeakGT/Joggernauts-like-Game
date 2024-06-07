@@ -202,6 +202,9 @@ export class GameManager extends cc.Component {
         this.physicsManager.gravity = cc.v2(0, -1600);
 
         this.lives = DataManager.getInstance().playerLives;
+        // add currentLives & currenetStars
+        DataManager.getInstance().currentPlayerLives = this.lives;
+        DataManager.getInstance().currentStars = 0;
 
         this.stageGeneratingProperties.initialPlatforms.forEach((data:cc.Vec3)=>{
             // here uses cc.Vec3 to store data
@@ -233,6 +236,13 @@ export class GameManager extends cc.Component {
         this.pollGamepads();
         this.scanDeadPlayer();
         this.cameraFollow(dt);
+        // add currentLives & currentStarts
+        DataManager.getInstance().currentPlayerLives = this.lives;
+        let currentStars = 0;
+        for (let i = 0; i < this.players.length; i++) currentStars += this.players[i].performance.stars;
+        DataManager.getInstance().currentStars = currentStars;
+        // cc.log(DataManager.getInstance().currentStars);
+
         if(this.isInfiniteStage) {
             this.generateMorePlatform();
         }
