@@ -13,6 +13,7 @@ export default class BackButton extends cc.Component {
     }
 
     onButtonClick() {
+        cc.director.resume();
         cc.director.loadScene("StageSelectScene");
     }
 }

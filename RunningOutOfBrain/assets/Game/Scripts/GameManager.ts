@@ -293,7 +293,7 @@ export class GameManager extends cc.Component {
                 }
                 break;
             case cc.macro.KEY.s:
-                if (this.players[1] && this.isLeadingPlayer(1)) this.players[1].playerShoot();
+                if (this.players[1] && this.isLeadingPlayer(1) && DataManager.getInstance().userCount >= 2) this.players[1].playerShoot();
                 break;
             case cc.macro.KEY.g:
                 if (this.players[2] && this.isLeadingPlayer(2)) this.players[2].playerShoot();
@@ -354,9 +354,6 @@ export class GameManager extends cc.Component {
             for(let j = 0; j < this.players.length; j++) {
                 if(this.players[j].node.name !== hex) continue;
                 DataManager.getInstance().gameSummary[color] = this.players[j].performance;
-            }
-            if(this.isInfiniteStage) {
-                DataManager.getInstance().gameSummary[color].stars = 3;
             }
         }
         cc.director.loadScene("CompleteScene");
@@ -518,9 +515,6 @@ export class GameManager extends cc.Component {
         let cnt = this.players.filter(p=>p.dying).length;
         if(cnt === 0) return;
         if(this.lives <= cnt) {
-            if(this.isInfiniteStage) {
-                return this.endStage();
-            }
             return this.restart();
         }
         this.lives -= cnt;
