@@ -1,4 +1,5 @@
 import { AudioManager } from "./AudioManager";
+import { DataManager } from "./DataManager";
 
 const { ccclass, property } = cc._decorator;
 
@@ -28,6 +29,8 @@ export default class StartScene extends cc.Component {
         // system
         cc.systemEvent.on(cc.SystemEvent.EventType.KEY_DOWN, this.onKeyDown, this);
         // music
+        cc.audioEngine.setMusicVolume(DataManager.getInstance().bgmVolume);
+        cc.audioEngine.setEffectsVolume(DataManager.getInstance().effectVolume);
         AudioManager.getInstance().playBGM(this.bgmClip);
     }
 
