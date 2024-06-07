@@ -1,9 +1,14 @@
 const { ccclass, property } = cc._decorator;
 
 import { DataManager } from "./DataManager";
+import { AudioManager } from "./AudioManager";
 
 @ccclass
 export default class ChooseRoleScene extends cc.Component {
+
+    @property(cc.AudioClip)
+    bgmClip: cc.AudioClip = null;
+
     @property([cc.Node])
     selectedCharactor: cc.Node[] = [];
 
@@ -81,6 +86,9 @@ export default class ChooseRoleScene extends cc.Component {
             this.selectedCharactor[i].active = true;
             this.selectedCharactor[i].setPosition(new cc.Vec2(minPlacingX+frameSpacing*(i+1), -160));
         }
+
+        // music
+        AudioManager.getInstance().playBGM(this.bgmClip);
     }
 
     update () {

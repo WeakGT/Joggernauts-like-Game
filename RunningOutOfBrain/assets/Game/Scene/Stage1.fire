@@ -17,16 +17,16 @@
         "__id__": 2
       },
       {
-        "__id__": 52
+        "__id__": 53
       },
       {
-        "__id__": 54
+        "__id__": 55
       },
       {
-        "__id__": 71
+        "__id__": 72
       },
       {
-        "__id__": 73
+        "__id__": 74
       }
     ],
     "_active": false,
@@ -112,6 +112,9 @@
       },
       {
         "__id__": 51
+      },
+      {
+        "__id__": 52
       }
     ],
     "_prefab": null,
@@ -2160,6 +2163,19 @@
     "_id": "0eCKgFuk5OtbJBCNG8o4ej"
   },
   {
+    "__type__": "59151n8vRJJGYmyfWj2L7e6",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 2
+    },
+    "_enabled": true,
+    "bgmClip": {
+      "__uuid__": "b1aa5511-0775-437d-b47d-7a24634d552a"
+    },
+    "_id": "0dPccjuOJM8YSFh9/6b8Pz"
+  },
+  {
     "__type__": "cc.Node",
     "_name": "collider",
     "_objFlags": 0,
@@ -2170,7 +2186,7 @@
     "_active": true,
     "_components": [
       {
-        "__id__": 53
+        "__id__": 54
       }
     ],
     "_prefab": null,
@@ -2226,7 +2242,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 52
+      "__id__": 53
     },
     "_enabled": true,
     "tiledMap": {
@@ -2245,7 +2261,7 @@
     "_active": true,
     "_components": [
       {
-        "__id__": 55
+        "__id__": 56
       }
     ],
     "_prefab": null,
@@ -2301,30 +2317,27 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 54
+      "__id__": 55
     },
     "_enabled": true,
     "stageRandomSeed": 117492658,
     "isInfiniteStage": false,
     "cameraProperties": {
-      "__id__": 56
-    },
-    "playerProperties": {
       "__id__": 57
     },
-    "enemyProperties": {
-      "__id__": 60
+    "playerProperties": {
+      "__id__": 58
     },
-    "collectableProperties": {
+    "enemyProperties": {
       "__id__": 61
     },
-    "stageGeneratingProperties": {
+    "collectableProperties": {
       "__id__": 62
     },
+    "stageGeneratingProperties": {
+      "__id__": 63
+    },
     "availableColorGroups": [
-      {
-        "__id__": 63
-      },
       {
         "__id__": 64
       },
@@ -2345,6 +2358,9 @@
       },
       {
         "__id__": 70
+      },
+      {
+        "__id__": 71
       }
     ],
     "_id": "9d0PphfX1IYrHFLa1bJyKh"
@@ -2379,10 +2395,10 @@
     "bulletDistance": 1000,
     "selectedPlayers": [
       {
-        "__id__": 58
+        "__id__": 59
       },
       {
-        "__id__": 59
+        "__id__": 60
       }
     ]
   },
@@ -2419,7 +2435,7 @@
   {
     "__type__": "StageGeneratingProperties",
     "colliderContainer": {
-      "__id__": 52
+      "__id__": 53
     },
     "minPlatformWidth": 64,
     "maxPlatformWidth": 384,
@@ -2655,7 +2671,7 @@
     "_active": true,
     "_components": [
       {
-        "__id__": 72
+        "__id__": 73
       }
     ],
     "_prefab": null,
@@ -2711,7 +2727,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 71
+      "__id__": 72
     },
     "_enabled": true,
     "button": {
@@ -2733,7 +2749,7 @@
     "_active": true,
     "_components": [
       {
-        "__id__": 74
+        "__id__": 75
       }
     ],
     "_prefab": null,
@@ -2789,7 +2805,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 73
+      "__id__": 74
     },
     "_enabled": true,
     "button": {

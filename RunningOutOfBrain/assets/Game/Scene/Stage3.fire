@@ -17,10 +17,10 @@
         "__id__": 2
       },
       {
-        "__id__": 10
+        "__id__": 11
       },
       {
-        "__id__": 12
+        "__id__": 13
       }
     ],
     "_active": false,
@@ -94,6 +94,9 @@
       },
       {
         "__id__": 9
+      },
+      {
+        "__id__": 10
       }
     ],
     "_prefab": null,
@@ -461,6 +464,19 @@
     "_id": "0eCKgFuk5OtbJBCNG8o4ej"
   },
   {
+    "__type__": "59151n8vRJJGYmyfWj2L7e6",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 2
+    },
+    "_enabled": true,
+    "bgmClip": {
+      "__uuid__": "76515897-d854-4331-8fb7-844f6b76868f"
+    },
+    "_id": "0e8+8xpT9PaZNzzpjgnr0P"
+  },
+  {
     "__type__": "cc.Node",
     "_name": "collider",
     "_objFlags": 0,
@@ -471,7 +487,7 @@
     "_active": true,
     "_components": [
       {
-        "__id__": 11
+        "__id__": 12
       }
     ],
     "_prefab": null,
@@ -527,7 +543,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 10
+      "__id__": 11
     },
     "_enabled": true,
     "tiledMap": null,
@@ -544,7 +560,7 @@
     "_active": true,
     "_components": [
       {
-        "__id__": 13
+        "__id__": 14
       }
     ],
     "_prefab": null,
@@ -600,30 +616,27 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 12
+      "__id__": 13
     },
     "_enabled": true,
     "stageRandomSeed": 117492658,
     "isInfiniteStage": true,
     "cameraProperties": {
-      "__id__": 14
-    },
-    "playerProperties": {
       "__id__": 15
     },
-    "enemyProperties": {
-      "__id__": 18
+    "playerProperties": {
+      "__id__": 16
     },
-    "collectableProperties": {
+    "enemyProperties": {
       "__id__": 19
     },
-    "stageGeneratingProperties": {
+    "collectableProperties": {
       "__id__": 20
     },
+    "stageGeneratingProperties": {
+      "__id__": 21
+    },
     "availableColorGroups": [
-      {
-        "__id__": 21
-      },
       {
         "__id__": 22
       },
@@ -644,6 +657,9 @@
       },
       {
         "__id__": 28
+      },
+      {
+        "__id__": 29
       }
     ],
     "_id": "d5aARdZR5MapDseW33wJIj"
@@ -678,10 +694,10 @@
     "bulletDistance": 1000,
     "selectedPlayers": [
       {
-        "__id__": 16
+        "__id__": 17
       },
       {
-        "__id__": 17
+        "__id__": 18
       }
     ]
   },
@@ -718,7 +734,7 @@
   {
     "__type__": "StageGeneratingProperties",
     "colliderContainer": {
-      "__id__": 10
+      "__id__": 11
     },
     "minPlatformWidth": 64,
     "maxPlatformWidth": 384,
