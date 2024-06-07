@@ -709,7 +709,7 @@
     "minDistBetweenCollectable": 64,
     "minDistAboveGround": 32,
     "maxDistAboveGround": 96,
-    "collectableSpawnProbability": 50,
+    "collectableSpawnProbability": 100,
     "shieldPrefab": {
       "__uuid__": "b9c9c27e-0bd5-4bf4-a368-4c60bd87cadc"
     },

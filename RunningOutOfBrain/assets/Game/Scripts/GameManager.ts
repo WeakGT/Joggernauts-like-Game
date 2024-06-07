@@ -470,6 +470,7 @@ export class GameManager extends cc.Component {
 
     respawn() {
         // respawn all players back to last saved check-point
+        this.restart();
     }
 
     spawnPlayers() {
@@ -682,7 +683,7 @@ export class GameManager extends cc.Component {
                     }
                     else if (this.players[0]) this.players[0].playerJump();
                 }
-                else if(gamepad.buttons[1].pressed) {//switch
+                if(gamepad.buttons[1].pressed) {//switch
                     if(DataManager.getInstance().userCount === 1 && this.isLeadingPlayer(0)) {
                         this.switchWithLeadingPlayer(1);
                     }
@@ -690,7 +691,7 @@ export class GameManager extends cc.Component {
                         this.switchWithLeadingPlayer(0);
                     }
                 }
-                else if(gamepad.buttons[0].pressed) {//shoot
+                if(gamepad.buttons[0].pressed) {//shoot
                     if(DataManager.getInstance().userCount === 1) {
                         this.getLeadingPlayer().playerShoot();
                     }
@@ -698,7 +699,7 @@ export class GameManager extends cc.Component {
                         this.players[0].playerShoot();
                     }
                 }
-                else if(gamepad.buttons[12].pressed) {//left player jump
+                if(gamepad.buttons[12].pressed) {//left player jump
                     if(DataManager.getInstance().userCount === 1) {
                         if(this.players[0] && this.isLeadingPlayer(0)) this.players[1].playerJump();
                         else this.players[0].playerJump();
@@ -709,10 +710,10 @@ export class GameManager extends cc.Component {
                 if(gamepad.buttons[3].pressed) {//jump
                     if (this.players[1]) this.players[1].playerJump();
                 }
-                else if(gamepad.buttons[1].pressed) {//switch
+                if(gamepad.buttons[1].pressed) {//switch
                     this.switchWithLeadingPlayer(1);
                 }
-                else if(gamepad.buttons[0].pressed) {//shoot
+                if(gamepad.buttons[0].pressed) {//shoot
                     if (this.players[1] && this.isLeadingPlayer(1)) this.players[1].playerShoot();
                 }
                 break;
@@ -720,10 +721,10 @@ export class GameManager extends cc.Component {
                 if(gamepad.buttons[3].pressed) {//jump
                     if (this.players[2]) this.players[2].playerJump();
                 }
-                else if(gamepad.buttons[1].pressed) {//switch
+                if(gamepad.buttons[1].pressed) {//switch
                     this.switchWithLeadingPlayer(2);
                 }
-                else if(gamepad.buttons[0].pressed) {//shoot
+                if(gamepad.buttons[0].pressed) {//shoot
                     if (this.players[2] && this.isLeadingPlayer(2)) this.players[2].playerShoot();
                 }
                 break;
@@ -731,10 +732,10 @@ export class GameManager extends cc.Component {
                 if(gamepad.buttons[3].pressed) {//jump
                     if (this.players[3]) this.players[3].playerJump();
                 }
-                else if(gamepad.buttons[1].pressed) {//switch
+                if(gamepad.buttons[1].pressed) {//switch
                     this.switchWithLeadingPlayer(3);
                 }
-                else if(gamepad.buttons[0].pressed) {//shoot
+                if(gamepad.buttons[0].pressed) {//shoot
                     if (this.players[3] && this.isLeadingPlayer(3)) this.players[2].playerShoot();
                 }
                 break;
