@@ -30,6 +30,15 @@ export class PlayerController extends cc.Component {
     @property(cc.AnimationClip)
     deadAnimation: cc.AnimationClip = null;
 
+    @property(cc.AudioClip)
+    shootEffect: cc.AudioClip = null;
+
+    @property(cc.AudioClip)
+    jumpEffect: cc.AudioClip = null;
+
+    @property(cc.AudioClip)
+    dieEffect: cc.AudioClip = null;
+
     public performance: PlayerPerformance = new PlayerPerformance();
 
     public dying: boolean = false;
@@ -101,6 +110,9 @@ export class PlayerController extends cc.Component {
         if (this.dying) return;
         this.dying = true;
         this.performance.deathes++;
+
+        // effect
+        cc.audioEngine.playEffect(this.dieEffect, false);
     }
     
     public playerAnimation(){
@@ -132,12 +144,18 @@ export class PlayerController extends cc.Component {
 
         this.canShoot = false;
         this.scheduleOnce(()=>{ this.canShoot = true }, 0.2);
+
+        // effect
+        cc.audioEngine.playEffect(this.shootEffect, false);
     }
 
     public playerJump() {
         if(!this.isFalling) {
             this.node.getComponent(cc.RigidBody).linearVelocity = cc.v2(0, this.playerJumpVel);
             this.anim.playJump();
+
+            // effect
+            cc.audioEngine.playEffect(this.jumpEffect, false);
         }
     }
 }

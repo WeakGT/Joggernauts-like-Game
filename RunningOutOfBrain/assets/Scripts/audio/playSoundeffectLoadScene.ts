@@ -7,6 +7,7 @@ export default class SoundManager extends cc.Component {
     soundEffect: cc.AudioClip = null; 
 
     protected onLoad(): void {
+        cc.audioEngine.stopAll();
         this.playSoundEffect();
     }
     
