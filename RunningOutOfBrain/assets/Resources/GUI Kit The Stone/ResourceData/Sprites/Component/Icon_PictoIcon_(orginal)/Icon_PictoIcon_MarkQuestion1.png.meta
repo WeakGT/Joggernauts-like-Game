@@ -1,6 +1,6 @@
 {
   "ver": "2.3.7",
-  "uuid": "4a66e09f-3ea1-44af-98fb-5ccdb2a3d7cb",
+  "uuid": "1b364fd9-7463-471f-8678-b1dc9ce4c96d",
   "importer": "texture",
   "type": "sprite",
   "wrapMode": "clamp",
@@ -14,9 +14,9 @@
   "subMetas": {
     "Icon_PictoIcon_MarkQuestion1": {
       "ver": "1.0.6",
-      "uuid": "002cc5ea-1ec6-4b8a-8d8d-2816604d7118",
+      "uuid": "f9f88f80-f292-4eee-8086-adf09f5b3aa7",
       "importer": "sprite-frame",
-      "rawTextureUuid": "4a66e09f-3ea1-44af-98fb-5ccdb2a3d7cb",
+      "rawTextureUuid": "1b364fd9-7463-471f-8678-b1dc9ce4c96d",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,

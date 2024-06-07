@@ -1,0 +1,43 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "yello",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 0.5166666666666667,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 2,
+  "curveData": {
+    "comps": {
+      "cc.Sprite": {
+        "spriteFrame": [
+          {
+            "frame": 0,
+            "value": {
+              "__uuid__": "da9262d7-6fb0-4f25-8120-9b800ccac53c"
+            }
+          },
+          {
+            "frame": 0.16666666666666666,
+            "value": {
+              "__uuid__": "a2357df1-6ea2-4dd7-9c07-33779bbe45e1"
+            }
+          },
+          {
+            "frame": 0.3333333333333333,
+            "value": {
+              "__uuid__": "642477c3-879c-45d3-a21c-55967cdd1d6c"
+            }
+          },
+          {
+            "frame": 0.5,
+            "value": {
+              "__uuid__": "9fd0b0cc-a2c1-43c8-a25e-2db436990050"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "events": []
+}

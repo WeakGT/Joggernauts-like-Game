@@ -1,6 +1,6 @@
 {
   "ver": "2.3.7",
-  "uuid": "b85350d8-abc4-49f5-b5cb-dd9e2437c489",
+  "uuid": "c0d6f0ee-4d7d-41f4-9509-75d8ece924e0",
   "importer": "texture",
   "type": "sprite",
   "wrapMode": "clamp",
@@ -14,9 +14,9 @@
   "subMetas": {
     "Icon_PictoIcon_Compass": {
       "ver": "1.0.6",
-      "uuid": "155c22ea-b0f9-49cd-8a2a-22d1147c9de7",
+      "uuid": "4e84e4fa-f202-4f2e-87c5-ee1d6db3f9a9",
       "importer": "sprite-frame",
-      "rawTextureUuid": "b85350d8-abc4-49f5-b5cb-dd9e2437c489",
+      "rawTextureUuid": "c0d6f0ee-4d7d-41f4-9509-75d8ece924e0",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,

@@ -1,0 +1,55 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "player_green_walk",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 0.43333333333333335,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 1,
+  "curveData": {
+    "comps": {
+      "cc.Sprite": {
+        "spriteFrame": [
+          {
+            "frame": 0,
+            "value": {
+              "__uuid__": "1682ff04-2471-4978-8061-080cbdf73bc1"
+            }
+          },
+          {
+            "frame": 0.08333333333333333,
+            "value": {
+              "__uuid__": "06d9ac76-4804-4e8c-8c86-fd54dca448c0"
+            }
+          },
+          {
+            "frame": 0.16666666666666666,
+            "value": {
+              "__uuid__": "4c520334-4afd-4257-bc26-182b009608bb"
+            }
+          },
+          {
+            "frame": 0.25,
+            "value": {
+              "__uuid__": "8487e8ad-8685-461f-8fd6-fcd0f5670436"
+            }
+          },
+          {
+            "frame": 0.3333333333333333,
+            "value": {
+              "__uuid__": "1fe31b55-3aee-443a-b579-ffadc8b8d255"
+            }
+          },
+          {
+            "frame": 0.4166666666666667,
+            "value": {
+              "__uuid__": "0d8c5505-5491-4fd5-ab99-6bbac10fc71c"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "events": []
+}

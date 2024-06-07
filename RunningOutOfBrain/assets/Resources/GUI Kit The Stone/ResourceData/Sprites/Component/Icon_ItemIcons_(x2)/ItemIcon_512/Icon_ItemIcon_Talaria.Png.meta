@@ -1,6 +1,6 @@
 {
   "ver": "2.3.7",
-  "uuid": "6dca08aa-24a1-48ec-b6fe-4c33b4317d5f",
+  "uuid": "0a93970f-c87d-442e-a652-1accc5b7f42a",
   "importer": "texture",
   "type": "sprite",
   "wrapMode": "clamp",
@@ -14,9 +14,9 @@
   "subMetas": {
     "Icon_ItemIcon_Talaria": {
       "ver": "1.0.6",
-      "uuid": "f13515c8-009d-4460-93d3-e20869e7417d",
+      "uuid": "af44dedd-ccfe-4a12-b238-0f1801519dd6",
       "importer": "sprite-frame",
-      "rawTextureUuid": "6dca08aa-24a1-48ec-b6fe-4c33b4317d5f",
+      "rawTextureUuid": "0a93970f-c87d-442e-a652-1accc5b7f42a",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,

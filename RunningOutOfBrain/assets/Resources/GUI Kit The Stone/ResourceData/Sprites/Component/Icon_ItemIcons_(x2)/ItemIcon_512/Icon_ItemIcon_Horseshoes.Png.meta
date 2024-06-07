@@ -1,6 +1,6 @@
 {
   "ver": "2.3.7",
-  "uuid": "0e4856e4-6458-403d-bfd4-8f69aec12457",
+  "uuid": "8f5c53ac-d404-4600-9965-ba35be7e90ac",
   "importer": "texture",
   "type": "sprite",
   "wrapMode": "clamp",
@@ -14,9 +14,9 @@
   "subMetas": {
     "Icon_ItemIcon_Horseshoes": {
       "ver": "1.0.6",
-      "uuid": "34637a1c-1cd2-4d7a-ae29-2d33e950cd92",
+      "uuid": "ce8a1eaa-37d8-4c5b-9632-1621f34121c4",
       "importer": "sprite-frame",
-      "rawTextureUuid": "0e4856e4-6458-403d-bfd4-8f69aec12457",
+      "rawTextureUuid": "8f5c53ac-d404-4600-9965-ba35be7e90ac",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,

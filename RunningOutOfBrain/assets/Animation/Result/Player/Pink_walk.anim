@@ -1,0 +1,61 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "09 Pink",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 1.0166666666666666,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 2,
+  "curveData": {
+    "comps": {
+      "cc.Sprite": {
+        "spriteFrame": [
+          {
+            "frame": 0,
+            "value": {
+              "__uuid__": "053dd880-43ce-4be7-adf8-9a212e56847d"
+            }
+          },
+          {
+            "frame": 0.16666666666666666,
+            "value": {
+              "__uuid__": "52da2273-9f8d-4381-92fe-49130c4cc123"
+            }
+          },
+          {
+            "frame": 0.3333333333333333,
+            "value": {
+              "__uuid__": "2a4a4e7b-49ae-4a40-b080-27a91ddb31f1"
+            }
+          },
+          {
+            "frame": 0.5,
+            "value": {
+              "__uuid__": "3559cc60-627c-41e2-9e77-14b58cc6695b"
+            }
+          },
+          {
+            "frame": 0.6666666666666666,
+            "value": {
+              "__uuid__": "927fad37-25a3-44f9-a9f3-c3e2bcd80dc8"
+            }
+          },
+          {
+            "frame": 0.8333333333333334,
+            "value": {
+              "__uuid__": "b03ac257-34da-4309-839b-69cd602542e7"
+            }
+          },
+          {
+            "frame": 1,
+            "value": {
+              "__uuid__": "053dd880-43ce-4be7-adf8-9a212e56847d"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "events": []
+}

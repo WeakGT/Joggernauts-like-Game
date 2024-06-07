@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "a5fdfaab-9fa8-4bc8-96f1-95f9742d513d",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 128,
+  "height": 128,
+  "platformSettings": {},
+  "subMetas": {
+    "UI_Icon_ShoppingCart": {
+      "ver": "1.0.6",
+      "uuid": "9460dbe4-32fd-4bd2-bd8c-a707a4d38e5f",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "a5fdfaab-9fa8-4bc8-96f1-95f9742d513d",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -0.5,
+      "offsetY": 0.5,
+      "trimX": 10,
+      "trimY": 18,
+      "width": 107,
+      "height": 91,
+      "rawWidth": 128,
+      "rawHeight": 128,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

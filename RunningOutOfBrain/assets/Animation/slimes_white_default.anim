@@ -1,0 +1,55 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "white_slimes_default",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 0.43333333333333335,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 1,
+  "curveData": {
+    "comps": {
+      "cc.Sprite": {
+        "spriteFrame": [
+          {
+            "frame": 0,
+            "value": {
+              "__uuid__": "fefdf850-4633-43f3-91fa-a365782f445c"
+            }
+          },
+          {
+            "frame": 0.08333333333333333,
+            "value": {
+              "__uuid__": "2293fda9-8b41-4b83-bf44-ef8fde7d3914"
+            }
+          },
+          {
+            "frame": 0.16666666666666666,
+            "value": {
+              "__uuid__": "f215e289-9e64-4495-904d-177f84e0ba84"
+            }
+          },
+          {
+            "frame": 0.25,
+            "value": {
+              "__uuid__": "eff2a2f5-b2af-4d07-92da-6ad0bc335de1"
+            }
+          },
+          {
+            "frame": 0.3333333333333333,
+            "value": {
+              "__uuid__": "465296ac-c254-4810-aee8-cefda83dab33"
+            }
+          },
+          {
+            "frame": 0.4166666666666667,
+            "value": {
+              "__uuid__": "fb410d99-8de7-42a7-8b54-a2f285a5d1e2"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "events": []
+}

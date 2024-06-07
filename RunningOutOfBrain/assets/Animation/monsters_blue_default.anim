@@ -1,0 +1,43 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "blue_monster_default",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 0.26666666666666666,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 1,
+  "curveData": {
+    "comps": {
+      "cc.Sprite": {
+        "spriteFrame": [
+          {
+            "frame": 0,
+            "value": {
+              "__uuid__": "2a0827a9-3e00-4437-b8ce-3873bd8652bb"
+            }
+          },
+          {
+            "frame": 0.08333333333333333,
+            "value": {
+              "__uuid__": "85223c6d-7f3d-4c87-8ce6-cbd3db7e5f1b"
+            }
+          },
+          {
+            "frame": 0.16666666666666666,
+            "value": {
+              "__uuid__": "96a7d9f8-7c3a-4105-8c50-5b4ddb03e73c"
+            }
+          },
+          {
+            "frame": 0.25,
+            "value": {
+              "__uuid__": "e2fa2373-160a-49dc-8113-212a64efc062"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "events": []
+}

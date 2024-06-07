@@ -1,6 +1,6 @@
 {
   "ver": "2.3.7",
-  "uuid": "05e9bf64-e2d2-4b34-8077-a1af940056a3",
+  "uuid": "97529abf-1b38-49c1-be9e-a5b26a84016f",
   "importer": "texture",
   "type": "sprite",
   "wrapMode": "clamp",
@@ -14,9 +14,9 @@
   "subMetas": {
     "Icon_ItemIcon_Hammer": {
       "ver": "1.0.6",
-      "uuid": "9a99db95-8c5a-4083-91af-5d24d4f9464f",
+      "uuid": "d688a08b-4177-4964-9acd-06dfe39a047f",
       "importer": "sprite-frame",
-      "rawTextureUuid": "05e9bf64-e2d2-4b34-8077-a1af940056a3",
+      "rawTextureUuid": "97529abf-1b38-49c1-be9e-a5b26a84016f",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,

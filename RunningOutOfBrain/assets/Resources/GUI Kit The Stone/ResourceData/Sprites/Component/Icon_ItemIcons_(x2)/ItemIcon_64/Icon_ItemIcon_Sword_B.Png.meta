@@ -1,6 +1,6 @@
 {
   "ver": "2.3.7",
-  "uuid": "db763c74-0309-4be0-9e05-a810b803a927",
+  "uuid": "f211dcaa-71b8-4ba3-8695-ebd3b6eadbd5",
   "importer": "texture",
   "type": "sprite",
   "wrapMode": "clamp",
@@ -14,9 +14,9 @@
   "subMetas": {
     "Icon_ItemIcon_Sword_B": {
       "ver": "1.0.6",
-      "uuid": "4cbd14f3-be1e-485b-baac-a1376c4667a0",
+      "uuid": "b825b744-6766-4031-911e-abf576224694",
       "importer": "sprite-frame",
-      "rawTextureUuid": "db763c74-0309-4be0-9e05-a810b803a927",
+      "rawTextureUuid": "f211dcaa-71b8-4ba3-8695-ebd3b6eadbd5",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,

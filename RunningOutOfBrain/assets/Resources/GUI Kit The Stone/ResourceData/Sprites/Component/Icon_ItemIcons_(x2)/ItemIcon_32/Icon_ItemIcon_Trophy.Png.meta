@@ -1,6 +1,6 @@
 {
   "ver": "2.3.7",
-  "uuid": "82524bc0-5564-4455-8c2f-112e97a02a8a",
+  "uuid": "646ff719-4299-46af-b333-565a2911d680",
   "importer": "texture",
   "type": "sprite",
   "wrapMode": "clamp",
@@ -14,9 +14,9 @@
   "subMetas": {
     "Icon_ItemIcon_Trophy": {
       "ver": "1.0.6",
-      "uuid": "8ce5821e-45f0-4621-9463-a5f74aeeb961",
+      "uuid": "8f9c330b-6a04-49cc-9d42-efc0baebd82d",
       "importer": "sprite-frame",
-      "rawTextureUuid": "82524bc0-5564-4455-8c2f-112e97a02a8a",
+      "rawTextureUuid": "646ff719-4299-46af-b333-565a2911d680",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,

@@ -1,6 +1,6 @@
 {
   "ver": "2.3.7",
-  "uuid": "9520ac12-1aad-48fa-babf-d56b89d1b177",
+  "uuid": "b4b0ee4d-3b81-4af4-b0d0-eb4afdd56df2",
   "importer": "texture",
   "type": "sprite",
   "wrapMode": "clamp",
@@ -14,9 +14,9 @@
   "subMetas": {
     "Icon_ItemIcon_Poiton_Purple": {
       "ver": "1.0.6",
-      "uuid": "644156a4-7fd3-4c96-8f9d-203a3112fb1b",
+      "uuid": "b0d46783-aa6c-4f9f-abf6-060663fb598a",
       "importer": "sprite-frame",
-      "rawTextureUuid": "9520ac12-1aad-48fa-babf-d56b89d1b177",
+      "rawTextureUuid": "b4b0ee4d-3b81-4af4-b0d0-eb4afdd56df2",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,

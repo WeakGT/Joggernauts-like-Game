@@ -1,0 +1,61 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "06 Orange",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 1.0166666666666666,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 2,
+  "curveData": {
+    "comps": {
+      "cc.Sprite": {
+        "spriteFrame": [
+          {
+            "frame": 0,
+            "value": {
+              "__uuid__": "21c5fb89-8009-4c5d-9536-a9d15eb765ec"
+            }
+          },
+          {
+            "frame": 0.16666666666666666,
+            "value": {
+              "__uuid__": "e7defaba-0869-49b0-8899-7ebd9060bab0"
+            }
+          },
+          {
+            "frame": 0.3333333333333333,
+            "value": {
+              "__uuid__": "d79ba651-0ae2-4b2f-a522-93a8567bd963"
+            }
+          },
+          {
+            "frame": 0.5,
+            "value": {
+              "__uuid__": "ab7ffc57-6a3e-4bfe-88e2-0177bed7e61e"
+            }
+          },
+          {
+            "frame": 0.6666666666666666,
+            "value": {
+              "__uuid__": "29ace54f-7169-4250-88de-020b2e298256"
+            }
+          },
+          {
+            "frame": 0.8333333333333334,
+            "value": {
+              "__uuid__": "f80900c6-cff3-4915-9ef0-1d39c028bb4b"
+            }
+          },
+          {
+            "frame": 1,
+            "value": {
+              "__uuid__": "21c5fb89-8009-4c5d-9536-a9d15eb765ec"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "events": []
+}

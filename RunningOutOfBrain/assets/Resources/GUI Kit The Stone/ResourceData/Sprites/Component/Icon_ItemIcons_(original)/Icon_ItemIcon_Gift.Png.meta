@@ -1,6 +1,6 @@
 {
   "ver": "2.3.7",
-  "uuid": "a8f5c74c-43c0-4df1-ac0e-290173dddce2",
+  "uuid": "58de00bb-6d6e-4935-881e-09dfb9a3514b",
   "importer": "texture",
   "type": "sprite",
   "wrapMode": "clamp",
@@ -14,9 +14,9 @@
   "subMetas": {
     "Icon_ItemIcon_Gift": {
       "ver": "1.0.6",
-      "uuid": "0cc74b2f-8c73-4e46-951f-dc798e38aa2b",
+      "uuid": "d876d017-7f4c-48e1-b88f-893e5dc62233",
       "importer": "sprite-frame",
-      "rawTextureUuid": "a8f5c74c-43c0-4df1-ac0e-290173dddce2",
+      "rawTextureUuid": "58de00bb-6d6e-4935-881e-09dfb9a3514b",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,

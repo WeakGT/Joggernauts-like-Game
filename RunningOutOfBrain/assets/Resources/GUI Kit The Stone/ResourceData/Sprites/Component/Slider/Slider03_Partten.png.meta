@@ -1,6 +1,6 @@
 {
   "ver": "2.3.7",
-  "uuid": "0fc748da-a8db-4de5-8161-29c7d635e870",
+  "uuid": "73e400da-78fb-467b-80ed-104e4e6401c4",
   "importer": "texture",
   "type": "sprite",
   "wrapMode": "clamp",
@@ -14,9 +14,9 @@
   "subMetas": {
     "Slider03_Partten": {
       "ver": "1.0.6",
-      "uuid": "40b795b5-8e2b-400d-a149-decec3aff4d7",
+      "uuid": "d4676efd-1c87-4c51-9a2d-cb351425990c",
       "importer": "sprite-frame",
-      "rawTextureUuid": "0fc748da-a8db-4de5-8161-29c7d635e870",
+      "rawTextureUuid": "73e400da-78fb-467b-80ed-104e4e6401c4",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,

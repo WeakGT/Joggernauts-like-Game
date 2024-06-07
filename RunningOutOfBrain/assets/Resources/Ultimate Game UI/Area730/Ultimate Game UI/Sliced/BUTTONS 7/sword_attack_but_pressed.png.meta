@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "7bc79e5c-ae67-4706-a043-eac5503eb958",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 267,
+  "height": 259,
+  "platformSettings": {},
+  "subMetas": {
+    "sword_attack_but_pressed": {
+      "ver": "1.0.6",
+      "uuid": "ec8c1023-31ca-4e2b-a660-b2ff94f4d8a5",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "7bc79e5c-ae67-4706-a043-eac5503eb958",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 267,
+      "height": 259,
+      "rawWidth": 267,
+      "rawHeight": 259,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

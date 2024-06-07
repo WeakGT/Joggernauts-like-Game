@@ -1,6 +1,6 @@
 {
   "ver": "2.3.7",
-  "uuid": "17b3f033-9027-4444-a3ac-c638ec9bfa18",
+  "uuid": "c80acf2a-a0ee-4294-a9fd-61799cc2b0b9",
   "importer": "texture",
   "type": "sprite",
   "wrapMode": "clamp",
@@ -14,9 +14,9 @@
   "subMetas": {
     "Frame_ItemFrame01_Sliver": {
       "ver": "1.0.6",
-      "uuid": "df8747bb-5db9-4714-b7e3-c1badaef0027",
+      "uuid": "a9e9a936-9892-491b-b4aa-cb7519a799bb",
       "importer": "sprite-frame",
-      "rawTextureUuid": "17b3f033-9027-4444-a3ac-c638ec9bfa18",
+      "rawTextureUuid": "c80acf2a-a0ee-4294-a9fd-61799cc2b0b9",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,

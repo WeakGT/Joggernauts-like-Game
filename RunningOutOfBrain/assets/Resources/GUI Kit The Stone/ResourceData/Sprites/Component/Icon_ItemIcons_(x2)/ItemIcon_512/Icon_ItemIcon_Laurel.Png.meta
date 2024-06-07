@@ -1,6 +1,6 @@
 {
   "ver": "2.3.7",
-  "uuid": "4269c5d8-95c7-46bb-a7bc-7847489a1314",
+  "uuid": "eb7390bc-f6c5-47a5-8651-d3801c217795",
   "importer": "texture",
   "type": "sprite",
   "wrapMode": "clamp",
@@ -14,9 +14,9 @@
   "subMetas": {
     "Icon_ItemIcon_Laurel": {
       "ver": "1.0.6",
-      "uuid": "cf54a885-4b82-44b8-ba6f-9991a3c73db0",
+      "uuid": "7c16da67-fb62-4dea-a6ca-10d4d0073fb8",
       "importer": "sprite-frame",
-      "rawTextureUuid": "4269c5d8-95c7-46bb-a7bc-7847489a1314",
+      "rawTextureUuid": "eb7390bc-f6c5-47a5-8651-d3801c217795",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,

@@ -1,6 +1,6 @@
 {
   "ver": "2.3.7",
-  "uuid": "c576679e-e631-4a96-abe8-95294ffe2a88",
+  "uuid": "0dff02c6-feea-4eeb-ab11-873ba2481889",
   "importer": "texture",
   "type": "sprite",
   "wrapMode": "clamp",
@@ -14,9 +14,9 @@
   "subMetas": {
     "Icon_ItemIcon_Medal_Silver": {
       "ver": "1.0.6",
-      "uuid": "9a548de4-9a7c-4466-ba29-2e03c975f8bc",
+      "uuid": "918d4971-0f56-484e-aeb2-c210e3cefc90",
       "importer": "sprite-frame",
-      "rawTextureUuid": "c576679e-e631-4a96-abe8-95294ffe2a88",
+      "rawTextureUuid": "0dff02c6-feea-4eeb-ab11-873ba2481889",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,

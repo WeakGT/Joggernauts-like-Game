@@ -1,6 +1,6 @@
 {
   "ver": "2.3.7",
-  "uuid": "5b534651-2053-4b92-b434-13f77f3ea49d",
+  "uuid": "716bf28b-0f7a-4eba-af85-3f94da4d4b4f",
   "importer": "texture",
   "type": "sprite",
   "wrapMode": "clamp",
@@ -14,9 +14,9 @@
   "subMetas": {
     "Icon_ItemIcon_Sandglass": {
       "ver": "1.0.6",
-      "uuid": "7aaa798f-d82f-421d-9b2b-59c703c9f3e2",
+      "uuid": "8ec6832e-0915-4c50-aca2-62a4edbb0944",
       "importer": "sprite-frame",
-      "rawTextureUuid": "5b534651-2053-4b92-b434-13f77f3ea49d",
+      "rawTextureUuid": "716bf28b-0f7a-4eba-af85-3f94da4d4b4f",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,

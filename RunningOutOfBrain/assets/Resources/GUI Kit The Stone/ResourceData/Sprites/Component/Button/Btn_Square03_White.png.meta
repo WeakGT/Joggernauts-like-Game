@@ -1,6 +1,6 @@
 {
   "ver": "2.3.7",
-  "uuid": "38f8a065-14d1-4605-a9a7-f54ac36731b1",
+  "uuid": "af1a2ffe-ce15-4fe9-8d03-b635dd37a274",
   "importer": "texture",
   "type": "sprite",
   "wrapMode": "clamp",
@@ -14,9 +14,9 @@
   "subMetas": {
     "Btn_Square03_White": {
       "ver": "1.0.6",
-      "uuid": "7a24f010-0fc2-438e-ba2d-d54e4d012641",
+      "uuid": "31e54952-10d3-470a-9cbb-f2b467b3a8e9",
       "importer": "sprite-frame",
-      "rawTextureUuid": "38f8a065-14d1-4605-a9a7-f54ac36731b1",
+      "rawTextureUuid": "af1a2ffe-ce15-4fe9-8d03-b635dd37a274",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,

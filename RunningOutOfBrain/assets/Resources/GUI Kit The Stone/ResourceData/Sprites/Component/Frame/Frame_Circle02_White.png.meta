@@ -1,6 +1,6 @@
 {
   "ver": "2.3.7",
-  "uuid": "b8b38be7-a570-4522-9f59-6efe4d2f8832",
+  "uuid": "797460ee-6cb3-4776-8492-1e233fe903e3",
   "importer": "texture",
   "type": "sprite",
   "wrapMode": "clamp",
@@ -14,9 +14,9 @@
   "subMetas": {
     "Frame_Circle02_White": {
       "ver": "1.0.6",
-      "uuid": "eab22929-680a-4f91-99f3-5544eb6fff51",
+      "uuid": "62cdf7f0-3250-4c57-9fea-e9ea2d49a25e",
       "importer": "sprite-frame",
-      "rawTextureUuid": "b8b38be7-a570-4522-9f59-6efe4d2f8832",
+      "rawTextureUuid": "797460ee-6cb3-4776-8492-1e233fe903e3",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,

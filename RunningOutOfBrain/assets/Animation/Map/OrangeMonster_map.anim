@@ -1,0 +1,43 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "OrangeMonster_map",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 0.5166666666666667,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 2,
+  "curveData": {
+    "comps": {
+      "cc.Sprite": {
+        "spriteFrame": [
+          {
+            "frame": 0,
+            "value": {
+              "__uuid__": "2ab87e9c-b3b6-4336-973b-53c6c5834928"
+            }
+          },
+          {
+            "frame": 0.16666666666666666,
+            "value": {
+              "__uuid__": "f1ae73dd-8e6d-4cb3-9941-6e7a6814226c"
+            }
+          },
+          {
+            "frame": 0.3333333333333333,
+            "value": {
+              "__uuid__": "94aae2e6-cdfc-4d13-ab4a-531af4b70051"
+            }
+          },
+          {
+            "frame": 0.5,
+            "value": {
+              "__uuid__": "765e4548-c390-44e5-930b-bb52581d99b6"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "events": []
+}

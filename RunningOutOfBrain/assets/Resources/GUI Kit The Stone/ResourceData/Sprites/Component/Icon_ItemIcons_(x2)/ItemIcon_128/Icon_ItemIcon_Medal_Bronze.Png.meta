@@ -1,6 +1,6 @@
 {
   "ver": "2.3.7",
-  "uuid": "7be1d96d-3912-4908-9657-387eadf97473",
+  "uuid": "7aefb69a-514c-4cff-a714-8e19ab2eac67",
   "importer": "texture",
   "type": "sprite",
   "wrapMode": "clamp",
@@ -14,9 +14,9 @@
   "subMetas": {
     "Icon_ItemIcon_Medal_Bronze": {
       "ver": "1.0.6",
-      "uuid": "cab91098-7413-4049-80c4-0ec1967483a2",
+      "uuid": "408e0811-94ac-4919-ba94-5b19ab0a858a",
       "importer": "sprite-frame",
-      "rawTextureUuid": "7be1d96d-3912-4908-9657-387eadf97473",
+      "rawTextureUuid": "7aefb69a-514c-4cff-a714-8e19ab2eac67",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,

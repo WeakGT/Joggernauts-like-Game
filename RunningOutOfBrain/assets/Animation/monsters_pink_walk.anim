@@ -1,0 +1,43 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "monster_A_walk",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 0.26666666666666666,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 1,
+  "curveData": {
+    "comps": {
+      "cc.Sprite": {
+        "spriteFrame": [
+          {
+            "frame": 0,
+            "value": {
+              "__uuid__": "4221876f-2131-4fbf-90a3-c7e4c87fadcd"
+            }
+          },
+          {
+            "frame": 0.08333333333333333,
+            "value": {
+              "__uuid__": "a68166bc-b5a8-444a-898b-fa2e6ce2137d"
+            }
+          },
+          {
+            "frame": 0.16666666666666666,
+            "value": {
+              "__uuid__": "ef076bab-52db-4780-baeb-166f42303e58"
+            }
+          },
+          {
+            "frame": 0.25,
+            "value": {
+              "__uuid__": "9c613c1c-2b51-4dc9-8f7c-7f14228b52c8"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "events": []
+}

@@ -1,0 +1,55 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "player_blue_walk",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 0.43333333333333335,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 1,
+  "curveData": {
+    "comps": {
+      "cc.Sprite": {
+        "spriteFrame": [
+          {
+            "frame": 0,
+            "value": {
+              "__uuid__": "0ee4a8f5-2b28-480a-921e-97bcd2187c54"
+            }
+          },
+          {
+            "frame": 0.08333333333333333,
+            "value": {
+              "__uuid__": "d20c57fc-bf48-418e-b4af-5e71783236f8"
+            }
+          },
+          {
+            "frame": 0.16666666666666666,
+            "value": {
+              "__uuid__": "117d6875-06a6-471f-a1e8-52a75204d754"
+            }
+          },
+          {
+            "frame": 0.25,
+            "value": {
+              "__uuid__": "e2b8e745-efd9-4672-8184-abda714c749d"
+            }
+          },
+          {
+            "frame": 0.3333333333333333,
+            "value": {
+              "__uuid__": "b5095cfc-a943-41c5-8555-d34af0d44749"
+            }
+          },
+          {
+            "frame": 0.4166666666666667,
+            "value": {
+              "__uuid__": "a3d27f89-c5af-49cf-8fbd-465cd23d0dc7"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "events": []
+}

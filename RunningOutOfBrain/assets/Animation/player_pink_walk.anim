@@ -1,0 +1,61 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "pink_run",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 0.45,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 1,
+  "curveData": {
+    "comps": {
+      "cc.Sprite": {
+        "spriteFrame": [
+          {
+            "frame": 0,
+            "value": {
+              "__uuid__": "cefa3f55-236d-4aaa-9e63-29eb44f266eb"
+            }
+          },
+          {
+            "frame": 0.08333333333333333,
+            "value": {
+              "__uuid__": "d6c97a5b-80f7-4037-a9ac-73fd46b8ed99"
+            }
+          },
+          {
+            "frame": 0.16666666666666666,
+            "value": {
+              "__uuid__": "b3e24e36-9419-4aaa-bb24-3b5bd5d47351"
+            }
+          },
+          {
+            "frame": 0.25,
+            "value": {
+              "__uuid__": "c9f9dc2b-01c8-44d1-bac8-addb425e5bad"
+            }
+          },
+          {
+            "frame": 0.3333333333333333,
+            "value": {
+              "__uuid__": "2f2ba504-f08c-4164-86b1-57b74c636ca3"
+            }
+          },
+          {
+            "frame": 0.4166666666666667,
+            "value": {
+              "__uuid__": "70285c8d-a2ac-40cb-95b0-6d73798d4115"
+            }
+          },
+          {
+            "frame": 0.43333333333333335,
+            "value": {
+              "__uuid__": "cefa3f55-236d-4aaa-9e63-29eb44f266eb"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "events": []
+}

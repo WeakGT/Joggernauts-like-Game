@@ -1,6 +1,6 @@
 {
   "ver": "2.3.7",
-  "uuid": "2f007d9b-4b06-4b08-9a10-7d50ad78763e",
+  "uuid": "88a07f77-a4fa-41e8-bd62-fc7f08152d23",
   "importer": "texture",
   "type": "sprite",
   "wrapMode": "clamp",
@@ -14,9 +14,9 @@
   "subMetas": {
     "Icon_ItemIcon_Anvil": {
       "ver": "1.0.6",
-      "uuid": "a3deda74-f8f1-4b10-a4a4-e17eeeba7a04",
+      "uuid": "973bcde1-b2c0-465b-b6d4-9b4f6a9360dc",
       "importer": "sprite-frame",
-      "rawTextureUuid": "2f007d9b-4b06-4b08-9a10-7d50ad78763e",
+      "rawTextureUuid": "88a07f77-a4fa-41e8-bd62-fc7f08152d23",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,

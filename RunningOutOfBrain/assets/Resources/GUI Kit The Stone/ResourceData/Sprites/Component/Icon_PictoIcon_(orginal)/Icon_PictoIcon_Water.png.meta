@@ -1,6 +1,6 @@
 {
   "ver": "2.3.7",
-  "uuid": "8681f408-57ac-4522-812e-49c89eff4e2c",
+  "uuid": "d2954b0f-63c3-4c79-a425-06b215135936",
   "importer": "texture",
   "type": "sprite",
   "wrapMode": "clamp",
@@ -14,9 +14,9 @@
   "subMetas": {
     "Icon_PictoIcon_Water": {
       "ver": "1.0.6",
-      "uuid": "aca6b9f2-f86f-4d3f-ba41-adf668a54f2c",
+      "uuid": "08d4ba65-bf59-4f46-9df0-f5fc90ff7f76",
       "importer": "sprite-frame",
-      "rawTextureUuid": "8681f408-57ac-4522-812e-49c89eff4e2c",
+      "rawTextureUuid": "d2954b0f-63c3-4c79-a425-06b215135936",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,

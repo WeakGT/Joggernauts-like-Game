@@ -1,6 +1,6 @@
 {
   "ver": "2.3.7",
-  "uuid": "a8a3e83a-8b0a-4802-ac07-41178bbda1cb",
+  "uuid": "3391474b-558f-4f9f-8241-454fa2f958b4",
   "importer": "texture",
   "type": "sprite",
   "wrapMode": "clamp",
@@ -14,9 +14,9 @@
   "subMetas": {
     "Icon_PictoIcon_Magnetic": {
       "ver": "1.0.6",
-      "uuid": "e5af5e9a-9030-4d77-8bb7-85e2c634f2d2",
+      "uuid": "02baf229-4fa2-4d18-bfab-f1478e4f0cc6",
       "importer": "sprite-frame",
-      "rawTextureUuid": "a8a3e83a-8b0a-4802-ac07-41178bbda1cb",
+      "rawTextureUuid": "3391474b-558f-4f9f-8241-454fa2f958b4",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,

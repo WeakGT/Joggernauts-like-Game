@@ -1,0 +1,43 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "GreenMonster_map",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 0.5166666666666667,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 2,
+  "curveData": {
+    "comps": {
+      "cc.Sprite": {
+        "spriteFrame": [
+          {
+            "frame": 0,
+            "value": {
+              "__uuid__": "86ce43ce-d9cd-4951-8e8b-997f2d3cfd70"
+            }
+          },
+          {
+            "frame": 0.16666666666666666,
+            "value": {
+              "__uuid__": "96c99d46-8b0f-480d-ae33-5cdadb9b8208"
+            }
+          },
+          {
+            "frame": 0.3333333333333333,
+            "value": {
+              "__uuid__": "475a8b4e-5bc7-40ab-b3c9-f5c3fb61d805"
+            }
+          },
+          {
+            "frame": 0.5,
+            "value": {
+              "__uuid__": "b2903151-7df6-435a-a3ce-4accd7bb0e56"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "events": []
+}

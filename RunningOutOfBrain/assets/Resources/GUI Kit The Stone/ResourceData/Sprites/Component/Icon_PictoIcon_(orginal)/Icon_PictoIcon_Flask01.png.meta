@@ -1,6 +1,6 @@
 {
   "ver": "2.3.7",
-  "uuid": "7b7f65d3-12b8-41d1-bc05-b4b125364ed6",
+  "uuid": "424031a3-7e49-42e6-a83a-db33bd090a96",
   "importer": "texture",
   "type": "sprite",
   "wrapMode": "clamp",
@@ -14,9 +14,9 @@
   "subMetas": {
     "Icon_PictoIcon_Flask01": {
       "ver": "1.0.6",
-      "uuid": "16846db2-2bf9-4c76-a1c7-b783cf118808",
+      "uuid": "caca9c47-0e69-4327-926f-84a8e6db2b95",
       "importer": "sprite-frame",
-      "rawTextureUuid": "7b7f65d3-12b8-41d1-bc05-b4b125364ed6",
+      "rawTextureUuid": "424031a3-7e49-42e6-a83a-db33bd090a96",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,

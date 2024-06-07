@@ -1,6 +1,6 @@
 {
   "ver": "2.3.7",
-  "uuid": "9c681122-359d-44cd-85ae-aace09123a39",
+  "uuid": "9b53760d-8afe-4c02-9f9b-e585ab8df8c4",
   "importer": "texture",
   "type": "sprite",
   "wrapMode": "clamp",
@@ -14,9 +14,9 @@
   "subMetas": {
     "Icon_ItemIcon_Treasure": {
       "ver": "1.0.6",
-      "uuid": "0bc36681-c20f-4855-99f8-da9f482642f5",
+      "uuid": "dfc67496-7620-4540-9a9e-488621cc9d37",
       "importer": "sprite-frame",
-      "rawTextureUuid": "9c681122-359d-44cd-85ae-aace09123a39",
+      "rawTextureUuid": "9b53760d-8afe-4c02-9f9b-e585ab8df8c4",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,

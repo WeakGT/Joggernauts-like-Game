@@ -1,6 +1,6 @@
 {
   "ver": "2.3.7",
-  "uuid": "72151fd9-50f5-4492-abd2-b26c1f8d6571",
+  "uuid": "6934ddb3-bd9c-4b57-8593-2a60684f1aa5",
   "importer": "texture",
   "type": "sprite",
   "wrapMode": "clamp",
@@ -14,9 +14,9 @@
   "subMetas": {
     "Icon_ItemIcon_Potion_Red": {
       "ver": "1.0.6",
-      "uuid": "4893956d-1a21-4ff9-846d-615f3042253e",
+      "uuid": "362b06ba-f80c-43f8-b7ca-c137a4b22fff",
       "importer": "sprite-frame",
-      "rawTextureUuid": "72151fd9-50f5-4492-abd2-b26c1f8d6571",
+      "rawTextureUuid": "6934ddb3-bd9c-4b57-8593-2a60684f1aa5",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,

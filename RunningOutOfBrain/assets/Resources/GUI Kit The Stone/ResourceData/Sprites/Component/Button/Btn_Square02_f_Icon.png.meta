@@ -1,6 +1,6 @@
 {
   "ver": "2.3.7",
-  "uuid": "2d23d9ca-3c94-4453-9583-ac34c55f3d67",
+  "uuid": "765e3a62-9470-42cc-870f-c54e30b3891b",
   "importer": "texture",
   "type": "sprite",
   "wrapMode": "clamp",
@@ -14,9 +14,9 @@
   "subMetas": {
     "Btn_Square02_f_Icon": {
       "ver": "1.0.6",
-      "uuid": "c8403a0d-8e92-4c08-b407-29c0149c0f8c",
+      "uuid": "95ad0f9e-d72e-457f-8ec5-f584849a0738",
       "importer": "sprite-frame",
-      "rawTextureUuid": "2d23d9ca-3c94-4453-9583-ac34c55f3d67",
+      "rawTextureUuid": "765e3a62-9470-42cc-870f-c54e30b3891b",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,

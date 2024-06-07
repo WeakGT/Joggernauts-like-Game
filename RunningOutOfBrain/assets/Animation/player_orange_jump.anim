@@ -1,0 +1,43 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "player_orange_jump",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 0.26666666666666666,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 1,
+  "curveData": {
+    "comps": {
+      "cc.Sprite": {
+        "spriteFrame": [
+          {
+            "frame": 0,
+            "value": {
+              "__uuid__": "b2f135c2-a81d-423e-a692-c6ce90991961"
+            }
+          },
+          {
+            "frame": 0.08333333333333333,
+            "value": {
+              "__uuid__": "39c7b40a-eb3b-4616-bac3-cb1c32ba8cfb"
+            }
+          },
+          {
+            "frame": 0.16666666666666666,
+            "value": {
+              "__uuid__": "a6dc93b5-adf9-4e3c-8942-cae78d0d4af8"
+            }
+          },
+          {
+            "frame": 0.25,
+            "value": {
+              "__uuid__": "44b9448e-3f9b-423e-9af4-8fd0f1927bae"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "events": []
+}

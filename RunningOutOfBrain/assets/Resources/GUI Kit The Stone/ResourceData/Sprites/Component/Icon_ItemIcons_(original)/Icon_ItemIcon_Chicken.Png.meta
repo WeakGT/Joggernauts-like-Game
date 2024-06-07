@@ -1,6 +1,6 @@
 {
   "ver": "2.3.7",
-  "uuid": "2c8bf3e7-5866-47af-a683-706990a33e16",
+  "uuid": "34b937b9-6b67-49b8-ac6c-cb935c38a26d",
   "importer": "texture",
   "type": "sprite",
   "wrapMode": "clamp",
@@ -14,9 +14,9 @@
   "subMetas": {
     "Icon_ItemIcon_Chicken": {
       "ver": "1.0.6",
-      "uuid": "2bca0ae7-1c6f-419a-b749-5e1ac4397ca4",
+      "uuid": "1f1f7c2f-eb7c-4d4b-89cd-e148a82f37ff",
       "importer": "sprite-frame",
-      "rawTextureUuid": "2c8bf3e7-5866-47af-a683-706990a33e16",
+      "rawTextureUuid": "34b937b9-6b67-49b8-ac6c-cb935c38a26d",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,

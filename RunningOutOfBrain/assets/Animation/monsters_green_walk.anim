@@ -1,0 +1,43 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "monster_B_walk",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 0.26666666666666666,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 1,
+  "curveData": {
+    "comps": {
+      "cc.Sprite": {
+        "spriteFrame": [
+          {
+            "frame": 0,
+            "value": {
+              "__uuid__": "7b4198b9-3a51-4416-9d01-4e7170b81e16"
+            }
+          },
+          {
+            "frame": 0.08333333333333333,
+            "value": {
+              "__uuid__": "39ba0d08-3478-4f45-9bde-9f2e77e1c87e"
+            }
+          },
+          {
+            "frame": 0.16666666666666666,
+            "value": {
+              "__uuid__": "4b1a6675-db32-46bd-a336-f2963a15951c"
+            }
+          },
+          {
+            "frame": 0.25,
+            "value": {
+              "__uuid__": "1f03e590-22be-460f-b7de-13e9b6431dc7"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "events": []
+}

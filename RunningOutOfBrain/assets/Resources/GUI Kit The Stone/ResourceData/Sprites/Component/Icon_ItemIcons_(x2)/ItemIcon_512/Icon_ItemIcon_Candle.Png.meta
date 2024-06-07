@@ -1,6 +1,6 @@
 {
   "ver": "2.3.7",
-  "uuid": "c86a32b1-ab43-4d27-be75-46534b3fd688",
+  "uuid": "b7bb9f72-3d6e-488f-a3e0-61a7d4d90472",
   "importer": "texture",
   "type": "sprite",
   "wrapMode": "clamp",
@@ -14,9 +14,9 @@
   "subMetas": {
     "Icon_ItemIcon_Candle": {
       "ver": "1.0.6",
-      "uuid": "7daf155b-5616-41af-a764-4d13e3056aa3",
+      "uuid": "253f3ad1-a9fb-467b-aa5c-6518b59b23d9",
       "importer": "sprite-frame",
-      "rawTextureUuid": "c86a32b1-ab43-4d27-be75-46534b3fd688",
+      "rawTextureUuid": "b7bb9f72-3d6e-488f-a3e0-61a7d4d90472",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,

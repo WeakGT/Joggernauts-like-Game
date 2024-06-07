@@ -1,0 +1,55 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "pink_slimes_default",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 0.43333333333333335,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 1,
+  "curveData": {
+    "comps": {
+      "cc.Sprite": {
+        "spriteFrame": [
+          {
+            "frame": 0,
+            "value": {
+              "__uuid__": "3ba63bcf-7e70-4e31-9370-bb8db083407c"
+            }
+          },
+          {
+            "frame": 0.08333333333333333,
+            "value": {
+              "__uuid__": "ca572892-1baa-45e6-bcb2-cea644d9cd16"
+            }
+          },
+          {
+            "frame": 0.16666666666666666,
+            "value": {
+              "__uuid__": "83a930ed-539b-466d-8cac-08f5ff0167ae"
+            }
+          },
+          {
+            "frame": 0.25,
+            "value": {
+              "__uuid__": "fd7a5ede-c2a7-42a6-8bf0-0cd888b80783"
+            }
+          },
+          {
+            "frame": 0.3333333333333333,
+            "value": {
+              "__uuid__": "fc2c98bf-52aa-4020-9e3e-85f2405825c8"
+            }
+          },
+          {
+            "frame": 0.4166666666666667,
+            "value": {
+              "__uuid__": "20d87e12-8e55-441a-863c-afe27188b126"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "events": []
+}

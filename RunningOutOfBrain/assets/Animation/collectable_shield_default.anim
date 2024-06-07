@@ -1,0 +1,49 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "collectable_shield_default",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 0.35,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 1,
+  "curveData": {
+    "comps": {
+      "cc.Sprite": {
+        "spriteFrame": [
+          {
+            "frame": 0,
+            "value": {
+              "__uuid__": "90965ecf-83a0-4307-9701-2dd3b7b64d87"
+            }
+          },
+          {
+            "frame": 0.08333333333333333,
+            "value": {
+              "__uuid__": "95f41d72-ddc9-489b-81b1-6bb428e9937b"
+            }
+          },
+          {
+            "frame": 0.16666666666666666,
+            "value": {
+              "__uuid__": "7874d2a7-c5bf-4d64-ba39-f7f7dd08692b"
+            }
+          },
+          {
+            "frame": 0.25,
+            "value": {
+              "__uuid__": "524ab4a3-1f61-4cbe-8585-96a45bc9392a"
+            }
+          },
+          {
+            "frame": 0.3333333333333333,
+            "value": {
+              "__uuid__": "d5db9594-2312-4e2b-93ee-dac16c05e9c3"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "events": []
+}
