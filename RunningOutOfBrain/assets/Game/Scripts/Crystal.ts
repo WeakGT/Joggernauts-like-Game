@@ -8,6 +8,9 @@ export class Crystal extends cc.Component {
     @property(cc.AnimationClip)
     defaultAnimation: cc.AnimationClip = null;
 
+    @property(cc.AudioClip)
+    crystalEffect: cc.AudioClip = null;
+
     private anim: cc.Animation = null;
 
     onLoad() {
@@ -29,6 +32,7 @@ export class Crystal extends cc.Component {
             if (otherNode.name === this.node.name) {
                 playerController.performance.collected++;
             }
+            cc.audioEngine.playEffect(this.crystalEffect, false);
             this.node.destroy();
         }
     }

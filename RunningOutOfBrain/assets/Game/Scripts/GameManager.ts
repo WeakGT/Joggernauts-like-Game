@@ -177,6 +177,12 @@ export class GameManager extends cc.Component {
     @property([ColorGroup])
     availableColorGroups: ColorGroup[] = [];
 
+    @property(cc.AudioClip)
+    rebornEffect: cc.AudioClip = null;
+
+    @property(cc.AudioClip)
+    switchEffect: cc.AudioClip = null;
+
     private cameraSize: cc.Size = null;
     private stageWidth: number = null;
     private players: PlayerController[] = [];
@@ -459,6 +465,9 @@ export class GameManager extends cc.Component {
     Player Section
     ----- */
     restart() {
+        // effect
+        cc.audioEngine.playEffect(this.rebornEffect, false);
+
         const currentSceneName = cc.director.getScene().name;
         cc.director.loadScene(currentSceneName, () => {
             console.log(`${currentSceneName} reloaded successfully`);
@@ -570,6 +579,9 @@ export class GameManager extends cc.Component {
 
         this.canSwitch = false;
         this.scheduleOnce(()=>{ this.canSwitch = true }, 0.2);
+
+        // effect
+        cc.audioEngine.playEffect(this.switchEffect, false);
     }
 
 

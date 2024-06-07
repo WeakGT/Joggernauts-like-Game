@@ -646,6 +646,15 @@
     "deadAnimation": {
       "__uuid__": "4339fa77-eb79-41da-b518-746edaa82af6"
     },
+    "shootEffect": {
+      "__uuid__": "4fc2932c-ad92-43c8-81ee-04d111c89cd9"
+    },
+    "jumpEffect": {
+      "__uuid__": "56e2630d-599e-4f95-88fb-cb3a6bd319be"
+    },
+    "dieEffect": {
+      "__uuid__": "7aed63f9-0a1b-4f30-99a2-9cd29fbe1213"
+    },
     "_id": ""
   },
   {
