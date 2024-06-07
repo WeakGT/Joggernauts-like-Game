@@ -68,7 +68,7 @@ export default class CameraController extends cc.Component {
     moveToTarget(target: cc.Node) {
         this.targetPosition = target.position;
         this.isMoving = true;
-        this.targetSceneName = `Stage${target.getChildByName("Label").getComponent(cc.Label).string}`;
+        this.targetSceneName = `LoadingStage${target.getChildByName("Label").getComponent(cc.Label).string}`;
     }
 
     onKeyDown(event: cc.Event.EventKeyboard) {
