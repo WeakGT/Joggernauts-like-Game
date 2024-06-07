@@ -8,6 +8,9 @@ export class Shield extends cc.Component {
     @property(cc.AnimationClip)
     defaultAnimation: cc.AnimationClip = null;
 
+    @property(cc.AudioClip)
+    crystalEffect: cc.AudioClip = null;
+
     public invincibleTime: number = 5;
 
     private anim: cc.Animation = null;
@@ -36,6 +39,8 @@ export class Shield extends cc.Component {
             this.protectingPlayer = otherCollider.node;
             playerController.invincibleTime = this.invincibleTime;
             this.scheduleOnce(()=>{ this.node.destroy() }, playerController.invincibleTime);
+            // effect
+            cc.audioEngine.playEffect(this.crystalEffect, false);
         }
     }
 }

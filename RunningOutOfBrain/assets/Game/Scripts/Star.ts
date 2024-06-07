@@ -8,6 +8,9 @@ export class Star extends cc.Component {
     @property(cc.AnimationClip)
     defaultAnimation: cc.AnimationClip = null;
 
+    @property(cc.AudioClip)
+    crystalEffect: cc.AudioClip = null;
+
     private anim: cc.Animation = null;
 
     onLoad() {
@@ -28,6 +31,9 @@ export class Star extends cc.Component {
         if (playerController) {
             playerController.performance.stars++;
             this.node.destroy();
+
+            // effect
+            cc.audioEngine.playEffect(this.crystalEffect, false);
         }
     }
 }
