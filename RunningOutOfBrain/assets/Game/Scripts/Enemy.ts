@@ -20,6 +20,7 @@ export class Enemy extends cc.Component {
     start() {
         this.anim = this.getComponent(cc.Animation);
         this.anim.addClip(this.defaultAnimation);
+        this.node.getChildByName("p").active = false;
     }
 
     update(dt: number) {
@@ -36,10 +37,15 @@ export class Enemy extends cc.Component {
         if(playerController) {
             if(playerController.invincibleTime > 0 || otherNode.name === this.node.name) {
                 contact.disabled = true;
-                this.node.destroy();
-                // this.scheduleOnce(() => {
-                //     this.node.active = false;
-                // }, 0.05);
+                if (this.node.getChildByName("p")) {
+                    this.node.getChildByName("p").active = true;
+                    this.scheduleOnce(() => {
+                        this.node.destroy();
+                    }, 0.1);
+                }
+                else {
+                    this.node.destroy();
+                }
             }
             else {
                 contact.disabled = true;
@@ -49,12 +55,17 @@ export class Enemy extends cc.Component {
         else if(otherNode.name === "bullet") {
             if(otherNode.parent && otherNode.parent.name === this.node.name) {
                 contact.disabled = true;
-                this.node.destroy();
-                otherNode.destroy();
-                // this.scheduleOnce(() => {
-                //     this.node.active = false;
-                //     otherNode.active = false;
-                // }, 0.05);
+                if (this.node.getChildByName("p")) {
+                    this.node.getChildByName("p").active = true;
+                    this.scheduleOnce(() => {
+                        this.node.destroy();
+                        otherNode.destroy();
+                    }, 0.1);
+                }
+                else {
+                    this.node.destroy();
+                    otherNode.destroy();
+                }
             }
             else {
                 otherNode.destroy();

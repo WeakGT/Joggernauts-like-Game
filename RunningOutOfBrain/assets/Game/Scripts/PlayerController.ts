@@ -53,6 +53,7 @@ export class PlayerController extends cc.Component {
     onLoad(){
         this.physicsBoxCollider = this.getComponent(cc.PhysicsBoxCollider);
         this.physicsBoxCollider.size = this.colliderSize;
+        this.node.getChildByName("die").active = false;
     }
 
     start(){}
@@ -101,6 +102,10 @@ export class PlayerController extends cc.Component {
         if (this.dying) return;
         this.dying = true;
         this.performance.deathes++;
+        this.node.getChildByName("die").active = true;
+        this.scheduleOnce(() => {
+            this.node.getChildByName("die").active = false;
+        }, 0.5);
     }
     
     public playerAnimation(){
