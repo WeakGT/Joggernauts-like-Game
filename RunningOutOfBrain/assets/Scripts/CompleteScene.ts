@@ -63,6 +63,7 @@ export class CompleteScene extends cc.Component {
             this.initPlayerPrefabs();
             this.initAnimationLayer();
             this.initSummaryLayer();
+            this.playNumberCountAnimation(0, userinfor.score, 3);
             cc.log('User score updated successfully!');
         });
     }

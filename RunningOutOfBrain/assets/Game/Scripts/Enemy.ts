@@ -40,6 +40,7 @@ export class Enemy extends cc.Component {
             if(playerController.invincibleTime > 0 || otherNode.name === this.node.name) {
                 contact.disabled = true;
                 userinfor.score += 10;//update score
+                playerController.performance.kills++;
                 if (this.node.getChildByName("p")) {
                     this.node.getChildByName("p").active = true;
                     this.scheduleOnce(() => {
@@ -58,6 +59,8 @@ export class Enemy extends cc.Component {
         else if(otherNode.name === "bullet") {
             if(otherNode.parent && otherNode.parent.name === this.node.name) {
                 contact.disabled = true;
+                let playerController = otherNode.parent.getComponent(PlayerController);
+                playerController.performance.kills++;
                 if (this.node.getChildByName("p")) {
                     this.node.getChildByName("p").active = true;
                     this.scheduleOnce(() => {
