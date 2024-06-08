@@ -14,10 +14,10 @@ export class DataManager {
     // GamePlay
     public playerLives: number = 5;
     public gameSpeed: number = 1;
-    public userCount: number = 1;
+    public userCount: number = 4;
     public currentPlayerLives: number = 5;
     public currentStars: number = 0;
-    public selectedPlayers: string[] = ["black", "white"];
+    public selectedPlayers: string[] = ["black",  "pink", "green", "white"];
     public gameSummary: {} = {
         // "black": {
         //     "kills": 12,
