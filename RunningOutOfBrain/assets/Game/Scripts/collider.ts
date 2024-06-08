@@ -25,6 +25,7 @@ export default class Collider extends cc.Component {
 
             // 設置位置
             colliderNode.setPosition(obj.x, obj.y);
+            cc.log(obj.x, obj.y);
 
             // 添加 RigidBody 組件
             let rigidBody = colliderNode.addComponent(cc.RigidBody);

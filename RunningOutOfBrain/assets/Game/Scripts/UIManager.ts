@@ -31,14 +31,14 @@ export default class UIManager extends cc.Component {
             this.starNodes = [];
 
             for (let i = 0; i < this.heartNumber; i++) {
-                const heartNode = cc.instantiate(this.heart);
+                let heartNode = cc.instantiate(this.heart);
                 heartNode.parent = this.node;
                 heartNode.setPosition(cc.v2(50 + i * 40, cc.winSize.height - 50)); // 左上角
                 this.heartNodes.push(heartNode);
             }
 
             for (let i = 0; i < this.starNumber; i++) {
-                const starNode = cc.instantiate(this.star);
+                let starNode = cc.instantiate(this.star);
                 starNode.parent = this.node;
                 starNode.setPosition(cc.v2(50 + i * 40, cc.winSize.height - 100)); // 左上角心下方
                 this.starNodes.push(starNode);
