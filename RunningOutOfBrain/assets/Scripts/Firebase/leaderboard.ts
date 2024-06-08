@@ -1,55 +1,59 @@
-const { ccclass, property } = cc._decorator;
+// Leaderboard.ts
+const {ccclass, property} = cc._decorator;
 
 @ccclass
 export default class Leaderboard extends cc.Component {
-    @property([cc.Label])
-    scoreLabels: cc.Label[] = [];
+    @property([cc.Node])
+    leaderboardItems: cc.Node[] = [];  // 用于存储预先创建的排行榜项节点
 
-    @property([cc.Label])
-    timeLabels: cc.Label[] = [];
+    @property(cc.Label)
+    UserScore: cc.Label = null;
 
-    @property([cc.Label])
-    emailLabels: cc.Label[] = [];
-
-    start() {
-        this.updateLeaderboard();
+    onLoad() {
+        this.loadLeaderboardData();
+        this.loadUserScore();
     }
 
-    updateLeaderboard() {
-        const leaderboardRef = firebase.database().ref('leaderboard');
-
-        leaderboardRef.once('value', (snapshot: any) => {
-            let leaderboardData: { uid: string, email: string, score: number, dateTime: string }[] = Object.values(snapshot.val() || {});
-
-            leaderboardData.sort((a, b) => {
-                if (a.score !== b.score) {
-                    return b.score - a.score;
-                } else {
-                    return new Date(b.dateTime).getTime() - new Date(a.dateTime).getTime();
+    loadLeaderboardData() {
+        var ref = firebase.database().ref('username').orderByChild('score').limitToLast(5);
+        ref.once('value', (snapshot) => {
+            let rank = 5;
+            let items = [];
+            snapshot.forEach((childSnapshot) => {
+                let childData = childSnapshot.val();
+                items.push({
+                    rank: rank,
+                    username: childData.username,
+                    score: childData.score
+                });
+                rank--;
+            });
+            // Reverse the items to show the highest score first
+            items.reverse();
+            items.forEach((item, index) => {
+                if (index < this.leaderboardItems.length) {
+                    let listItem = this.leaderboardItems[index];
+                    listItem.getChildByName('Rank').getComponent(cc.Label).string = item.rank.toString();
+                    listItem.getChildByName('Name').getComponent(cc.Label).string = item.username;
+                    listItem.getChildByName('Score').getComponent(cc.Label).string = item.score.toString();
                 }
             });
-
-            for (let i = 0; i < leaderboardData.length; i++) {
-                if (i < this.scoreLabels.length) {
-                    this.scoreLabels[i].string = leaderboardData[i].score.toString();
-                    this.timeLabels[i].string = leaderboardData[i].dateTime;
-                    this.emailLabels[i].string = leaderboardData[i].email;
-                }
-            }
         });
     }
 
-    formatDateTime(dateTime: string): string {
-        const date = new Date(dateTime);
-        const year = date.getFullYear();
-        const month = this.formatNumber(date.getMonth() + 1);
-        const day = this.formatNumber(date.getDate());
-        const hours = this.formatNumber(date.getHours());
-        const minutes = this.formatNumber(date.getMinutes());
-        return `${year}/${month}/${day} ${hours}:${minutes}`;
+    loadUserScore() {
+        let user = firebase.auth().currentUser;
+        if (user) {
+            let userRef = firebase.database().ref('username').child(user.uid);
+            userRef.once('value').then((snapshot) => {
+                let userData = snapshot.val();
+                if(this.UserScore)
+                    this.UserScore.string = userData.score;
+            });
+        }
     }
 
-    formatNumber(num: number): string {
-        return num < 10 ? '0' + num : num.toString();
+    Back() {
+        cc.director.loadScene("StartScene");
     }
 }

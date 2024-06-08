@@ -1,3 +1,5 @@
+import userinfor = require("./User");
+
 const {ccclass, property, disallowMultiple} = cc._decorator;
 
 import { DataManager } from "./../../Scripts/DataManager";

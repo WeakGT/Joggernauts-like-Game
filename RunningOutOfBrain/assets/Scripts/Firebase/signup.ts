@@ -1,3 +1,5 @@
+import userinfor = require("./User");
+
 const {ccclass, property} = cc._decorator;
 
 @ccclass
@@ -21,17 +23,27 @@ export default class Signin extends cc.Component {
     onSignupButtonClick() {
         const email = this.emailEditBox.string;
         const password = this.passwordEditBox.string;
-
-        firebase.auth().createUserWithEmailAndPassword(email, password)
-            .then((userCredential) => {
-                const user = userCredential.user;
-                console.log('User signed up:', user);
-                cc.director.loadScene(this.nextScene.name); 
-            })
-            .catch((error) => {
-                const errorCode = error.code;
-                const errorMessage = error.message;
-                console.error('Sign up error:', errorCode, errorMessage);
-            });
+        const self = this;
+        
+        firebase.auth().createUserWithEmailAndPassword(email , password).then(function(result){
+            cc.log("create successfully");
+            let str = email.split('@');
+            let username = str[0];
+            cc.log(username);
+            var data = {
+                username : username,
+                score : 0
+            }
+            userinfor.username = username;
+            var ref = firebase.database().ref('username').child(result.user.uid);
+            ref.set(data);
+            cc.log('push ' + username);
+            if (self.nextScene) {
+                cc.director.loadScene(self.nextScene.name);  
+            }
+        }).catch(function (error) {
+            alert('Create error: ' + error.message);
+            cc.log('create error');
+        });
     }
 }

@@ -1,3 +1,5 @@
+import userinfor = require("../../Scripts/Firebase/User");
+
 const {ccclass, property, disallowMultiple} = cc._decorator;
 
 import { DataManager } from "./../../Scripts/DataManager";
@@ -37,6 +39,7 @@ export class Enemy extends cc.Component {
         if(playerController) {
             if(playerController.invincibleTime > 0 || otherNode.name === this.node.name) {
                 contact.disabled = true;
+                userinfor.score += 10;//update score
                 if (this.node.getChildByName("p")) {
                     this.node.getChildByName("p").active = true;
                     this.scheduleOnce(() => {

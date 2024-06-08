@@ -1,3 +1,5 @@
+import userinfor = require("../../Scripts/Firebase/User");
+
 const {ccclass, property, disallowMultiple} = cc._decorator;
 
 import { PlayerController } from './PlayerController';
@@ -29,6 +31,7 @@ export class Star extends cc.Component {
         let playerController = otherNode.getComponent(PlayerController);
 
         if (playerController) {
+            userinfor.score += 50;
             playerController.performance.stars++;
             this.node.destroy();
 

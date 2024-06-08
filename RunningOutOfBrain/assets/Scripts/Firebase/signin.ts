@@ -1,3 +1,5 @@
+import userinfor = require("./User");
+
 const {ccclass, property} = cc._decorator;
 
 @ccclass
@@ -19,22 +21,32 @@ export default class LoginScript extends cc.Component {
     }
 
     onLoginButtonClick() {
+        cc.log(this.nextScene.name);
         const email = this.emailEditBox.string;
         const password = this.passwordEditBox.string;
-
-        firebase.auth().signInWithEmailAndPassword(email, password)
-            .then((userCredential) => {
-                const user = userCredential.user;
-                console.log('User signed in:', user);
-
-                if (this.nextScene) {
-                    cc.director.loadScene(this.nextScene.name);  
-                }
-            })
-            .catch((error) => {
-                const errorCode = error.code;
-                const errorMessage = error.message;
-                console.error('Sign in error:', errorCode, errorMessage);
-            });
+        const self = this;
+        
+        firebase.auth().signInWithEmailAndPassword(email , password).then(function(user){
+            if(user){
+                let _user = firebase.auth().currentUser;
+                cc.log("Login Success!")
+                var user_ref = firebase.database().ref('username').child(_user.uid);
+                user_ref.once('value').then(function (snapshot) {
+                    cc.log('Get data');
+                    //cc.log(snapshot);
+                    var childData = snapshot.val();
+                    cc.log(childData);       
+                    userinfor.username = childData.username;
+                    userinfor.score = childData.score;
+                }).then(function () {
+                    if (self.nextScene) {
+                        cc.director.loadScene(self.nextScene.name);  
+                    }
+                });
+            }
+        }).catch(function(error){
+            alert('Login error: ' + error.message);
+            cc.log("Login Error!")
+        });
     }
 }
