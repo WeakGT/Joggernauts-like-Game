@@ -1,5 +1,6 @@
 const {ccclass, property} = cc._decorator;
 import { DataManager } from "../../Scripts/DataManager";
+import userinfor = require("../../Scripts/Firebase/User");
 
 @ccclass
 export default class UIManager extends cc.Component {
@@ -43,5 +44,6 @@ export default class UIManager extends cc.Component {
                 this.starNodes.push(starNode);
             }
         }
+        cc.find("Canvas/Main Camera/Score").getComponent(cc.Label).string = userinfor.score.toString();
     }
 }
