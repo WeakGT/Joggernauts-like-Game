@@ -23,10 +23,10 @@
         "__id__": 57
       },
       {
-        "__id__": 74
+        "__id__": 72
       },
       {
-        "__id__": 76
+        "__id__": 74
       }
     ],
     "_active": false,
@@ -2451,15 +2451,21 @@
       "__id__": 60
     },
     "enemyProperties": {
-      "__id__": 63
+      "__id__": 61
     },
     "collectableProperties": {
-      "__id__": 64
+      "__id__": 62
     },
     "stageGeneratingProperties": {
-      "__id__": 65
+      "__id__": 63
     },
     "availableColorGroups": [
+      {
+        "__id__": 64
+      },
+      {
+        "__id__": 65
+      },
       {
         "__id__": 66
       },
@@ -2477,12 +2483,6 @@
       },
       {
         "__id__": 71
-      },
-      {
-        "__id__": 72
-      },
-      {
-        "__id__": 73
       }
     ],
     "rebornEffect": {
@@ -2520,23 +2520,7 @@
     "playerShiftingSpeed": 1000,
     "distBetweenPlayers": 100,
     "bulletSpeed": 300,
-    "bulletDistance": 1000,
-    "selectedPlayers": [
-      {
-        "__id__": 61
-      },
-      {
-        "__id__": 62
-      }
-    ]
-  },
-  {
-    "__type__": "SelectedPlayer",
-    "colorName": "black"
-  },
-  {
-    "__type__": "SelectedPlayer",
-    "colorName": "white"
+    "bulletDistance": 1000
   },
   {
     "__type__": "EnemyProperties",
@@ -2799,7 +2783,7 @@
     "_active": true,
     "_components": [
       {
-        "__id__": 75
+        "__id__": 73
       }
     ],
     "_prefab": null,
@@ -2855,7 +2839,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 74
+      "__id__": 72
     },
     "_enabled": true,
     "button": {
@@ -2877,7 +2861,7 @@
     "_active": true,
     "_components": [
       {
-        "__id__": 77
+        "__id__": 75
       }
     ],
     "_prefab": null,
@@ -2933,7 +2917,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 76
+      "__id__": 74
     },
     "_enabled": true,
     "button": {

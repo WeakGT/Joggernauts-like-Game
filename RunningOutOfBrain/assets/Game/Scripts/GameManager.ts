@@ -87,9 +87,6 @@ class PlayerProperties {
     
     @property()
     bulletDistance: number = 1000;
-
-    @property([SelectedPlayer])
-    selectedPlayers: SelectedPlayer[] = [];
 }
 
 @ccclass("EnemyProperties")
@@ -501,11 +498,11 @@ export class GameManager extends cc.Component {
             throw new Error("Invalid Color Chosen!");
         }
 
-        DataManager.getInstance().selectedPlayers.reverse().forEach((colorName, index)=>{
+        DataManager.getInstance().selectedPlayers.forEach((colorName, index)=>{
             let playerNode = cc.instantiate(availableColorGroupsByName[colorName].playerPrefab);
             let spawnPos = new cc.Vec2(
                 this.playerProperties.playerInitialPosition.x + this.playerProperties.distBetweenPlayers*index,
-                this.playerProperties.playerInitialPosition.y + playerNode.getComponent(cc.PhysicsBoxCollider).size.height/2
+                this.playerProperties.playerInitialPosition.y + playerNode.getComponent(cc.PhysicsBoxCollider).size.height
             );
             playerNode.name = availableColorGroupsByName[colorName].reprColor.toHEX();
             playerNode.setParent(this.playerProperties.playerContainer);
@@ -620,7 +617,6 @@ export class GameManager extends cc.Component {
             spawnNode.name = colorData.reprColor.toHEX();
             spawnNode.setParent(this.enemyProperties.enemyContainer);
             spawnNode.setPosition(new cc.Vec2(x + i*this.enemyProperties.minDistBetweenEnemy, y).add(posOffset));
-            console.log("spawn enemy at", spawnNode.x, spawnNode.y);
             maxGeneratedX = spawnNode.getPosition().x + spawnSize.width;
         }
         return maxGeneratedX;
