@@ -1,3 +1,5 @@
+import userinfor = require("../../Scripts/Firebase/User");
+
 const {ccclass, property, disallowMultiple} = cc._decorator;
 
 import { PlayerController } from './PlayerController';
@@ -30,6 +32,7 @@ export class Crystal extends cc.Component {
 
         if (playerController) {
             if (otherNode.name === this.node.name) {
+                userinfor.score += 5;
                 playerController.performance.collected++;
             }
             cc.audioEngine.playEffect(this.crystalEffect, false);

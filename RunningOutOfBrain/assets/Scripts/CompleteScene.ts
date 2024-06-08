@@ -1,3 +1,5 @@
+import userinfor = require("./Firebase/User");
+
 import { DataManager } from "./DataManager";
 
 import { PlayerController } from "../Game/Scripts/PlayerController";
@@ -56,9 +58,31 @@ export class CompleteScene extends cc.Component {
 
     onLoad() {
         this.summaryLayer.active = false;
-        this.initPlayerPrefabs();
-        this.initAnimationLayer();
-        this.initSummaryLayer();
+
+        this.updateUserScore(() => {
+            this.initPlayerPrefabs();
+            this.initAnimationLayer();
+            this.initSummaryLayer();
+            cc.log('User score updated successfully!');
+        });
+    }
+
+    updateUserScore(callback: Function) {
+        let user = firebase.auth().currentUser;
+        if (user) {
+            let userRef = firebase.database().ref('username').child(user.uid);
+            userRef.once('value').then((snapshot) => {
+                // let userData = snapshot.val();
+                let newScore = userinfor.score; // 获取当前游戏分数
+                // let newScore = userData.score + currentScore;
+                userRef.update({ score: newScore }).then(() => {
+                    // 更新分数完成后调用回调函数
+                    if (callback) {
+                        callback();
+                    }
+                });
+            });
+        }
     }
 
     initPlayerPrefabs() {

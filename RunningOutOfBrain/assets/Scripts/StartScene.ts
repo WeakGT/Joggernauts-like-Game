@@ -25,6 +25,10 @@ export default class StartScene extends cc.Component {
         }
     }
 
+    toLeaderboard() {
+        cc.director.loadScene("Scoreboard");
+    }
+
     start() {
         // system
         cc.systemEvent.on(cc.SystemEvent.EventType.KEY_DOWN, this.onKeyDown, this);
